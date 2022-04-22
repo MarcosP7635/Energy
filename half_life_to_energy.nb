@@ -1,0 +1,119 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4084,        111]
+NotebookOptionsPosition[      3416,         91]
+NotebookOutlinePosition[      3911,        109]
+CellTagsIndexPosition[      3868,        106]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"EnergyCalc", "[", 
+   RowBox[{"halfLife_", ",", " ", "time_", ",", "initialMass_"}], "]"}], ":=", 
+  RowBox[{"UnitConvert", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"MassLost", "[", 
+      RowBox[{"halfLife", ",", "time", ",", "initialMass"}], "]"}], "*", 
+     RowBox[{
+      TemplateBox[{
+        InterpretationBox["\[InvisibleSpace]", 1], 
+        StyleBox["\"c\"", Italic, StripOnInput -> False], "speed of light", 
+        "\"SpeedOfLight\""},
+       "Quantity"], "^", "2"}]}], ",", " ", "\"\<Joules\>\""}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MassLost", "[", 
+    RowBox[{"halfLife_", ",", " ", "time_", ",", " ", "initialMass_"}], "]"}],
+    ":=", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{"mass", ",", " ", "\"\<kg\>\""}], "]"}], "*", 
+    RowBox[{"(", 
+     RowBox[{".5", "^", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"UnitConvert", "[", 
+         RowBox[{"time", ",", " ", "\"\<seconds\>\""}], "]"}], "/", 
+        RowBox[{"UnitConvert", "[", 
+         RowBox[{"halfLife", ",", " ", "\"\<seconds\>\""}], "]"}]}], ")"}]}], 
+     ")"}]}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.8489903956107774`*^9, {3.848990425994977*^9, 3.8489905366731296`*^9}, {
+   3.848990592710393*^9, 3.8489906367488832`*^9}, {3.8489907330176024`*^9, 
+   3.8489909261171303`*^9}, {3.8489911551471224`*^9, 3.84899116087197*^9}, {
+   3.848991322871154*^9, 3.8489913292391825`*^9}, 3.8489913875627975`*^9, {
+   3.8489914227686567`*^9, 3.8489914439860005`*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"bdb831b8-4624-4e70-837f-60336cadb7bb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"halfLifeU238", " ", "=", 
+   TemplateBox[{"1.41`*^17", "\"s\"", "seconds", "\"Seconds\""},
+    "Quantity"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mass", " ", "=", " ", 
+   TemplateBox[{"1", "\"\[Mu]g\"", "microgram", "\"Micrograms\""},
+    "Quantity"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", " ", "=", " ", 
+   TemplateBox[{"1", "\"s\"", "second", "\"Seconds\""},
+    "Quantity"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"EnergyCalc", "[", 
+  RowBox[{"halfLifeU238", ",", " ", "t", ",", " ", "mass"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8489911765409546`*^9, 3.848991307539185*^9}, {
+  3.848991342537465*^9, 3.848991408497978*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"53d7b8e5-989c-4429-854a-42967b825664"],
+
+Cell[BoxData[
+ TemplateBox[{"8.987551787368177`*^7", "\"J\"", "joules", "\"Joules\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.84899129047025*^9, 3.8489913086898637`*^9}, {
+   3.848991339141907*^9, 3.8489914094661627`*^9}, 3.8489914563757877`*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"65b46540-19cd-4425-bd33-e2573b952ead"]
+}, Open  ]]
+},
+WindowSize->{624.6, 576.9},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"649cb61b-d503-4899-aa34-c7eb63f10b2b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1666, 39, 144, "Input",ExpressionUUID->"bdb831b8-4624-4e70-837f-60336cadb7bb"],
+Cell[CellGroupData[{
+Cell[2249, 63, 814, 18, 111, "Input",ExpressionUUID->"53d7b8e5-989c-4429-854a-42967b825664"],
+Cell[3066, 83, 334, 5, 38, "Output",ExpressionUUID->"65b46540-19cd-4425-bd33-e2573b952ead"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,104 @@
+﻿If any of us profit from these ideas, we split it 50+50. 
+Consider old technologies that you can replace. 
+Fridges!
+        Individually packaged cooling! 
+                Biodegradable material and thermal insulator!  - Sasha
+        Doors
+                Selective barrier
+                        Retractable crystal that is opaque, rigid, and thermally insulating.
+                        Cheaper than wood.
+        Texting, Writing, and Speaking
+                Measure the electric current from muscle movements to 
+type text and select/generate images
+                        Already used for Stephen Hawking (with eye muscles).
+Receive messages from something tactile (or just a visual display like an app)
+                                
+                        
+                
+        Bathroom 
+                Shower Heads 
+                        Shower heads on the walls of the shower
+                                I think rich people might buy it. - Marcos
+        Weight Efficient Long Term Thermonuclear 
+Order of magnitude a comprehensive plan for nuclear, then ask someone in the field for specifics. 
+
+
+Things to Investigate
+Shielding 
+Current plan for shielding: 1mm of water sandwiched by 1micron plates of lead on each side. 
+
+
+How do the fungi (radiotrophic) around Chernobyl attenuate radiation? Much more promising!!! doi.org/10.1101/2020.07.16.205534
+
+
+Bottlenecks: Any constraints in time, availability, or cost that hinder these facilities and/or batteries
+                                Radionuclide Availability
+                        Energy Surplus Prevention
+                                Reduce the flux of energy to the thermocouple? 
+The easiest way to do this is retractable and expandable shielding
+and/or rotating an asymmetric/nonuniform thermocouple? 
+
+
+Are there cheap widely available thermocouples with easily (in real time) adjustable efficiencies? 
+                        Simple automated Way to Find the Ideal Nuclides
+                                Script in (a) Colaboratory cell(s) that quantifies the merits of each
+isotope (in no particular order yet): availability, cost, time to produce and acquire, and proximity of half-life to a century. 
+Ideally this would be a very general set of functions and/or classes to evaluate isotopes and an automated (or just fast/low effort) way to acquire relevant data.  
+
+
+First, determine which decay paths are most promising (the ones that need the least shielding?) 
+
+
+Brief Outline and Description of Supply Chain and Implementation
+
+
+Inclusive and Welcome Campaign to Increase the Public Acceptance and Support of Nuclear Power
+
+
+Practical Domestic RTGs
+(Encased in lead) encased in water?
+Why can’t it be miniaturized?
+                                
+Thermoelectric conduit attached to a small rod of plutonium/uranium. 
+                                        Is there something sufficiently hot/radioactive that is not 
+Fissile?
+https://doi.org/10.1016/j.rser.2019.109572 
+doi.org/ 10.1109/ICT.1999.843442 
+ 
+                        Rough Estimate of Energy Production: 
+                                https://github.com/MarcosP7635/Nuclear 
+                                        Energy production exponentially decays :( 
+                                U238 Production
+                                Can you melt and centrifuge out uranium from minerals?
+                        
+                        Electrothermal Conduit
+                                Thermocouples!
+                                
+Nuclear isotopes as energy storage?
+https://doi.org/10.1016/j.mtener.2021.100688 
+                        Half-life vs. Power Output Colaboratory
+  
+
+
+
+Potential Applications
+A smartphone needs on the order of 20 W, so assuming we need the isotope to produce on the order of 10^1.9 W/mg = 80W/mg the graph implies this could be powered continuously for 30 years! Could this be used for supercomputers too? 
+Only 1g needed to produce a kW for a century. Surely a hospital would benefit from this? 
+It doesn’t even need to be fissile!!
+There are around 10^4.5 hospitals in the US and they each consume ~5% of the total US energy supply which is has grown by ~1000x since 2007 which was then estimated to be 10^17 J cumulatively in the US. Thus we have 17-1.5 = 16.5. 
+Thus a hospital in the US needs 10^16.5 J. This seems wrong. Revise later.
+Revising ->
+The US uses around 1.3 kW/person
+(Handy conversion- 1Btu ~ 10^-3.5 kWH)
+Thus, according to https://www.eia.gov/international/rankings/world?pa=12&u=0&f=A&v=none&y=01%2F01%2F2019, the US uses .03 quadrillion Btu = 30 trillion kWH. Assuming hospitals use on the order of ~5% of the US energy supply we jave 1.5 trillion kWH used by US hospitals in 2019. Assuming there are 10^4.5 hospitals we have 2*10^7 kWH consumed by the average US hospital in 2019. 
+Thus, each hospital each year needs about 2*10^15 J. This is nearly one order of magnitude off from the sketchy estimate before revising. If 1mg of a 100-y half life isotope can provide 1W for a century, then (by the revises estimate of annual power consumption), on average in 2019 a US hospital needed 2*10^7.5 W. Thus, each hospital would need ~10^8 mg or 100 kg to be powered autonomously without interruption for a century. The entire US's energy needs (at the 2019 rate of consumption) for the next century would only need 10^8 kg. 
+
+
+Radionuclide Availability
+Old paper https://www.ncbi.nlm.nih.gov/books/NBK11468/#a200130bcddd00075 
+
+
+Cheap radioactive minerals? 
+Is there a cheap fast way to purify uranium containing minerals?
+Assumptions to account for
+Under what criteria is half-life constant? What decay paths will occur? What shielding is sufficient?
