@@ -371,7 +371,7 @@
 
     
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{157}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k+kn}{import} \PY{n+nn}{astropy}\PY{n+nn}{.}\PY{n+nn}{units} \PY{k}{as} \PY{n+nn}{units}
 \PY{k+kn}{import} \PY{n+nn}{astropy}\PY{n+nn}{.}\PY{n+nn}{constants} \PY{k}{as} \PY{n+nn}{constants}
@@ -398,8 +398,125 @@
 Collection} / \href{https://www-nds.iaea.org/amdc/}{Atomic Mass Data
 Center (AMDC)}
 
+    \#\#Nubase2020
+
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{347}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{url} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{https://www\PYZhy{}nds.iaea.org/amdc/ame2020/nubase\PYZus{}3.mas20.txt}\PY{l+s+s2}{\PYZdq{}}
+\PY{n}{response} \PY{o}{=} \PY{n}{requests}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{n}{url}\PY{p}{)}
+\PY{n}{nubase} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{response}\PY{o}{.}\PY{n}{text}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+\PY{n}{nubase} \PY{o}{=} \PY{n}{nubase}\PY{p}{[}\PY{l+m+mi}{25}\PY{p}{:}\PY{p}{]}
+\PY{n}{column\PYZus{}dict} \PY{o}{=} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{AAA}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ZZZi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{9}\PY{p}{)}\PY{p}{,}
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A El}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{11}\PY{p}{,}\PY{l+m+mi}{17}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{s}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{17}\PY{p}{]}\PY{p}{)}\PY{p}{,} 
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mass \PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{19}\PY{p}{,}\PY{l+m+mi}{32}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dMass \PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,}\PY{l+m+mi}{43}\PY{p}{)}\PY{p}{,}
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Exc \PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{43}\PY{p}{,}\PY{l+m+mi}{55}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dE \PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{55}\PY{p}{,}\PY{l+m+mi}{66}\PY{p}{)}\PY{p}{,}
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Orig}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{66}\PY{p}{,}\PY{l+m+mi}{68}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Isom.Unc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{68}\PY{p}{]}\PY{p}{)}\PY{p}{,}
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Isom.Inv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{69}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{T \PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{70}\PY{p}{,} \PY{l+m+mi}{79}\PY{p}{)}\PY{p}{,}
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{unit T}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{79}\PY{p}{,} \PY{l+m+mi}{81}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dT}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{81}\PY{p}{,} \PY{l+m+mi}{89}\PY{p}{)}\PY{p}{,}
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Jpi */\PYZsh{}/T=}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{88}\PY{p}{,} \PY{l+m+mi}{103}\PY{p}{)}\PY{p}{,} 
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ensdf year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{102}\PY{p}{,} \PY{l+m+mi}{105}\PY{p}{)}\PY{p}{,} 
+\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Discovery}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{114}\PY{p}{,} \PY{l+m+mi}{119}\PY{p}{)}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{BR}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{119}\PY{p}{,} \PY{l+m+mi}{210}\PY{p}{)}\PY{p}{\PYZcb{}}
+\PY{c+c1}{\PYZsh{}make an array of lists of the columns}
+
+\PY{k}{def} \PY{n+nf}{clean}\PY{p}{(}\PY{n}{array}\PY{p}{)}\PY{p}{:}
+    \PY{c+c1}{\PYZsh{}turn the array of characters into a string and remove spaces}
+    \PY{n}{array} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{array}\PY{p}{)}\PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{k}{try}\PY{p}{:}
+        \PY{n}{array} \PY{o}{=} \PY{n}{array}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{n+nb}{float}\PY{p}{)}
+    \PY{k}{except}\PY{p}{:}
+        \PY{k}{pass}
+    \PY{k}{return} \PY{n}{array}
+
+\PY{c+c1}{\PYZsh{}Turn the list of strings into a multidimensional array}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}get substring from each item in array}
+\PY{k}{def} \PY{n+nf}{get\PYZus{}substring}\PY{p}{(}\PY{n}{array}\PY{p}{,} \PY{n}{start}\PY{p}{,} \PY{n}{end}\PY{p}{)}\PY{p}{:}
+    \PY{c+c1}{\PYZsh{}start and end are the indices of the substring}
+    \PY{c+c1}{\PYZsh{}returns a list of the substring}
+    \PY{k}{try}\PY{p}{:}
+        \PY{k}{return} \PY{p}{[}\PY{n}{item}\PY{p}{[}\PY{n}{start}\PY{p}{:}\PY{n}{end}\PY{p}{]} \PY{k}{for} \PY{n}{item} \PY{o+ow}{in} \PY{n}{array}\PY{p}{]}
+    \PY{k}{except}\PY{p}{:}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{item}\PY{p}{)}\PY{p}{,} \PY{n}{end}\PY{p}{)}
+        \PY{k}{return} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{error}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{make\PYZus{}dict\PYZus{}from\PYZus{}string\PYZus{}array}\PY{p}{(}\PY{n}{column\PYZus{}dict}\PY{p}{,} \PY{n}{string\PYZus{}array}\PY{p}{)}\PY{p}{:}
+    \PY{c+c1}{\PYZsh{}column\PYZus{}dict is a dictionary of the column names and the indices}
+    \PY{c+c1}{\PYZsh{}string\PYZus{}array is a list of strings}
+    \PY{c+c1}{\PYZsh{}returns a dictionary of the column names and the values}
+    \PY{n}{nubase\PYZus{}dict} \PY{o}{=} \PY{p}{\PYZob{}}\PY{p}{\PYZcb{}}
+    \PY{k}{for} \PY{n}{key}\PY{p}{,} \PY{n}{columns} \PY{o+ow}{in} \PY{n}{column\PYZus{}dict}\PY{o}{.}\PY{n}{items}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+        \PY{n}{nubase\PYZus{}dict}\PY{p}{[}\PY{n}{key}\PY{p}{]} \PY{o}{=} \PY{n}{get\PYZus{}substring}\PY{p}{(}\PY{n}{string\PYZus{}array}\PY{p}{,} \PY{n}{columns}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{columns}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
+    \PY{k}{return} \PY{n}{nubase\PYZus{}dict}
+
+\PY{n}{nubase\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{make\PYZus{}dict\PYZus{}from\PYZus{}string\PYZus{}array}\PY{p}{(}\PY{n}{column\PYZus{}dict}\PY{p}{,} \PY{n}{nubase}\PY{p}{)}\PY{p}{)}
+\PY{n}{nubase\PYZus{}df}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+     AAA ZZZi   A El s         Mass \#     dMass \#        Exc \#        dE \#  \textbackslash{}
+0     01  000  1n         8071.3181      0.0004
+1     01  010  1H         7288.971064    0.000013
+2     02  010  2H        13135.722895    0.000015
+3     03  010  3H        14949.81090     0.00008
+4     03  020  3He       14931.21888     0.00006
+{\ldots}   ..  {\ldots}    {\ldots} ..           {\ldots}         {\ldots}          {\ldots}         {\ldots}
+5839  93  180  293Og     98800\#        710\#
+5840  94  170  294Ts     96400\#        590\#
+5841  94  180  294Og     99320\#        550\#
+5842  95  180  295Og     01370\#        660\#
+5843
+
+     Orig Isom.Unc Isom.Inv       T \# unit T       dT      Jpi */\#/T=  \textbackslash{}
+0                            609.8         s  0.6      1/2+*
+1                            stbl                      1/2+*
+2                            stbl                      1+*
+3                             12.32        y  0.02     1/2+*
+4                            stbl                      1/2+*
+{\ldots}   {\ldots}      {\ldots}      {\ldots}       {\ldots}    {\ldots}      {\ldots}             {\ldots}
+5839    N                      1\#          s
+5840                          70           s  30
+5841                            0.7        s  0.3      0+
+5842                          680          s  540
+5843
+
+     Ensdf year Discovery             BR
+0            06      1932         B-=100
+1            06      1920  IS=99.9855 78
+2            03      1932   IS=0.0145 78
+3            00      1934         B-=100
+4            98      1934    IS=0.0002 2
+{\ldots}         {\ldots}       {\ldots}            {\ldots}
+5839         00      2010            A ?
+5840         19      2010          A=100
+5841         05      2004    A\textasciitilde{}100; SF ?
+5842                 2006          A\textasciitilde{}100
+5843
+
+[5844 rows x 18 columns]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{nubase\PYZus{}df}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{nubase\PYZus{}df.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+\end{Verbatim}
+\end{tcolorbox}
+
+    \#\#AME2020
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{url} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{https://www\PYZhy{}nds.iaea.org/amdc/ame2020/mass\PYZus{}1.mas20.txt}\PY{l+s+s2}{\PYZdq{}}
 \PY{n}{response} \PY{o}{=} \PY{n}{requests}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{n}{url}\PY{p}{)}
@@ -465,21 +582,21 @@ Center (AMDC)}
     \end{Verbatim}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{348}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{Atomic\PYZus{}mass\PYZus{}table\PYZus{}2020}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{348}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
          N      Z      A  Elt. Orig. Mass excess (keV)  \textbackslash{}
-0        1    0.0    1.0     n    NA           8071.32
-1        0    1.0    1.0     H    NA           7288.97
-2        1    1.0    2.0     H    NA           13135.7
-3        2    1.0    3.0     H    NA           14949.8
-4        1    2.0    3.0    He    NA           14931.2
+0        1    0.0    1.0     n    NA        8071.31806
+1        0    1.0    1.0     H    NA       7288.971064
+2        1    1.0    2.0     H    NA      13135.722895
+3        2    1.0    3.0     H    NA        14949.8109
+4        1    2.0    3.0    He    NA       14931.21888
 {\ldots}    {\ldots}    {\ldots}    {\ldots}   {\ldots}   {\ldots}               {\ldots}
 3554   175  118.0  293.0    Og    -a           198802\#
 3555   177  117.0  294.0    Ts    -a           196397\#
@@ -517,11 +634,11 @@ Center (AMDC)}
 0                    782.347                          0.0004
 1                          *                              NA
 2                          *                              NA
-3                     18.592                         0.00006
-4                     -13736                           2000\#
+3                   18.59202                         0.00006
+4                   -13736.0                           2000\#
 {\ldots}                      {\ldots}                             {\ldots}
 3554                       *                              NA
-3555                   -2923                            811\#
+3555                 -2923.0                            811\#
 3556                       *                              NA
 3557                       *                              NA
 3558                    None                            None
@@ -544,7 +661,7 @@ Center (AMDC)}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{350}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}Now we want to write the dataframe to a csv file}
 \PY{n}{Atomic\PYZus{}mass\PYZus{}table\PYZus{}2020}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Atomic\PYZus{}mass\PYZus{}table\PYZus{}2020.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
@@ -556,7 +673,7 @@ Center (AMDC)}
     \#Calculations for Power vs.~Half-life
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{162}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{def} \PY{n+nf}{half\PYZus{}life\PYZus{}to\PYZus{}energy}\PY{p}{(}\PY{n}{half\PYZus{}life}\PY{p}{,} \PY{n}{time}\PY{p}{,} \PY{n}{initial\PYZus{}mass}\PY{p}{,} \PY{n}{decay\PYZus{}type}\PY{p}{,} \PY{n}{molar\PYZus{}mass}\PY{p}{)}\PY{p}{:}
     \PY{c+c1}{\PYZsh{}we assume half life and time have consistent units (e.g. both in seconds)}
@@ -593,7 +710,7 @@ second :).
     \end{Verbatim}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{163}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
 \PY{l+s+sd}{Here we will plot half\PYZhy{}life versus power generated in first second of existence.}
@@ -640,16 +757,12 @@ second :).
 \end{tcolorbox}
 
     \begin{center}
-<<<<<<< HEAD
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Energy_files/Energy_8_0.png}
-=======
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Images/matplotlib1.png}
->>>>>>> afb712505426e85d342894446788805dd65252fb
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Energy_files/Energy_13_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{164}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
 \PY{l+s+sd}{Interestingly, zooming in we have a half\PYZhy{}life of 10\PYZca{}9 seconds (30 years) }
@@ -661,23 +774,19 @@ second :).
 \end{tcolorbox}
 
     \begin{center}
-<<<<<<< HEAD
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Energy_files/Energy_9_0.png}
-=======
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Images/matplotlib2.png}
->>>>>>> afb712505426e85d342894446788805dd65252fb
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Energy_files/Energy_14_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{164}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array([-0.9999807 ,  6.95525217])
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{165}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{half\PYZus{}life\PYZus{}Si\PYZus{}31} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{157} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{minute}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{s}\PY{p}{)} \PY{o}{/} \PY{n}{units}\PY{o}{.}\PY{n}{s}
 \PY{n}{power\PYZus{}Si\PYZus{}31\PYZus{}per\PYZus{}gram} \PY{o}{=} \PY{n}{half\PYZus{}life\PYZus{}to\PYZus{}energy}\PY{p}{(}\PY{n}{half\PYZus{}life\PYZus{}Si\PYZus{}31}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{beta\PYZus{}minus}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
@@ -687,14 +796,14 @@ array([-0.9999807 ,  6.95525217])
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{165}{}
+\prompt{Out}{outcolor}{ }{}
     
     $1946.6018 \; \mathrm{W}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{166}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{half\PYZus{}life\PYZus{}Ni\PYZus{}63} \PY{o}{=} \PY{p}{(}\PY{l+m+mf}{100.1} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{year}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{s}\PY{p}{)} \PY{o}{/} \PY{n}{units}\PY{o}{.}\PY{n}{s}
 \PY{n}{power\PYZus{}Ni\PYZus{}63\PYZus{}per\PYZus{}gram} \PY{o}{=} \PY{n}{half\PYZus{}life\PYZus{}to\PYZus{}energy}\PY{p}{(}\PY{n}{half\PYZus{}life\PYZus{}Ni\PYZus{}63}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{beta\PYZus{}minus}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
@@ -704,7 +813,7 @@ array([-0.9999807 ,  6.95525217])
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{166}{}
+\prompt{Out}{outcolor}{ }{}
     
     $0.0028564536 \; \mathrm{W}$
 
@@ -723,7 +832,7 @@ Q = .782MeV - \bar{v}_{mass}c^2
 \end{equation} Assuming a massless neutrino this simplifies to .782 MeV
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{167}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}half\PYZus{}life\PYZus{}to\PYZus{}energy(.987 * 3.1536 * (10 ** 9), 1, 10**\PYZhy{}6)[0]}
 \PY{n}{avg\PYZus{}energy\PYZus{}per\PYZus{}decay} \PY{o}{=} \PY{l+m+mi}{17} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{keV}
@@ -738,7 +847,7 @@ Q = .782MeV - \bar{v}_{mass}c^2
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{167}{}
+\prompt{Out}{outcolor}{ }{}
     
     $46.019612 \; \mathrm{}$
 
@@ -761,7 +870,7 @@ temperature},
 et al.~2004. Figure 4.})
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{168}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{class} \PY{n+nc}{ni63\PYZus{}setup}\PY{p}{:}
   \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
@@ -780,7 +889,7 @@ et al.~2004. Figure 4.})
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{169}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{class} \PY{n+nc}{solar\PYZus{}panel}\PY{p}{:}
   \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
@@ -824,7 +933,7 @@ et al.~2004. Figure 4.})
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{170}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{def} \PY{n+nf}{calc\PYZus{}brehm\PYZus{}coeff}\PY{p}{(}\PY{p}{)}\PY{p}{:}
   \PY{n}{echarge} \PY{o}{=} \PY{l+m+mf}{1.6021766} \PY{o}{*} \PY{p}{(}\PY{l+m+mi}{10} \PY{o}{*}\PY{o}{*} \PY{o}{\PYZhy{}}\PY{l+m+mi}{19}\PY{p}{)} \PY{o}{*} \PY{n}{C}
@@ -837,7 +946,7 @@ et al.~2004. Figure 4.})
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{171}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
 \PY{l+s+sd}{https://www.thermofisher.com/order/catalog/product/1517021A }
@@ -848,7 +957,7 @@ et al.~2004. Figure 4.})
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{171}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 '\textbackslash{}nhttps://www.thermofisher.com/order/catalog/product/1517021A \textbackslash{}n\textbackslash{}n50 W is
 sufficient for 10\^{}8 n/s\textbackslash{}n'
@@ -866,7 +975,7 @@ N = \frac{P\rho}{E_{\gamma}}\\
 \end{equation}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{172}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{def} \PY{n+nf}{g\PYZus{}per\PYZus{}year}\PY{p}{(}\PY{n}{solar\PYZus{}flux}\PY{p}{,} \PY{n}{area}\PY{p}{,} \PY{n}{efficiency}\PY{p}{,} \PY{n}{energy\PYZus{}per\PYZus{}neutron}\PY{p}{,} \PY{n}{molar\PYZus{}mass}\PY{p}{)}\PY{p}{:}
   \PY{n}{power} \PY{o}{=} \PY{n}{solar\PYZus{}flux} \PY{o}{*} \PY{n}{area} \PY{o}{*} \PY{n}{efficiency}
@@ -886,7 +995,7 @@ N = \frac{P\rho}{E_{\gamma}}\\
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{172}{}
+\prompt{Out}{outcolor}{ }{}
     
     $274.74004 \; \mathrm{\frac{g}{yr}}$
 
@@ -899,7 +1008,7 @@ moles per year \textgreater{} 2kg. Every car will need 5 years. We need
 400 million m\(^2\)
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{173}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{earth\PYZus{}rad} \PY{o}{=} \PY{l+m+mi}{6400} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{km}
 \PY{n}{earth\PYZus{}surface\PYZus{}area} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{pi} \PY{o}{*} \PY{l+m+mi}{4} \PY{o}{*} \PY{p}{(}\PY{n}{earth\PYZus{}rad} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)}
@@ -909,7 +1018,7 @@ moles per year \textgreater{} 2kg. Every car will need 5 years. We need
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{173}{}
+\prompt{Out}{outcolor}{ }{}
     
     $7.7712375 \times 10^{-7} \; \mathrm{}$
 
@@ -929,7 +1038,7 @@ The emission of radiation by accelerating charges is derived in Chapter
 14 and 15 of the 2nd edition of Jackson's E\&M.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{174}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
 \PY{l+s+sd}{Source: }
@@ -945,35 +1054,35 @@ The emission of radiation by accelerating charges is derived in Chapter
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{174}{}
+\prompt{Out}{outcolor}{ }{}
     
     $142596.4 \; \mathrm{km^{2}}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{175}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{global\PYZus{}power\PYZus{}consumed} \PY{o}{/} \PY{n}{power\PYZus{}Si\PYZus{}31\PYZus{}per\PYZus{}gram}
 \end{Verbatim}
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{175}{}
+\prompt{Out}{outcolor}{ }{}
     
     $7.3254015 \times 10^{9} \; \mathrm{}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{176}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{global\PYZus{}power\PYZus{}consumed}
 \end{Verbatim}
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{176}{}
+\prompt{Out}{outcolor}{ }{}
     
     $1.425964 \times 10^{13} \; \mathrm{W}$
 
@@ -987,7 +1096,7 @@ The emission of radiation by accelerating charges is derived in Chapter
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{177}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{area\PYZus{}California\PYZus{}state} \PY{o}{=} \PY{l+m+mf}{423970.694} \PY{o}{*} \PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{km}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{)}
 \PY{n}{area\PYZus{}California\PYZus{}state} \PY{o}{/} \PY{n}{area\PYZus{}needed}
@@ -995,7 +1104,7 @@ The emission of radiation by accelerating charges is derived in Chapter
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{177}{}
+\prompt{Out}{outcolor}{ }{}
     
     $2.9732217 \; \mathrm{}$
 
@@ -1008,7 +1117,7 @@ world.
 rapidly replant native flora.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{178}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}https://doi.org/10.1103/PhysRevX.7.041003}
 \PY{n+nb}{input} \PY{o}{=} \PY{l+m+mi}{40} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{PW}
@@ -1019,7 +1128,7 @@ rapidly replant native flora.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{178}{}
+\prompt{Out}{outcolor}{ }{}
     
     $1.2483018 \times 10^{29} \; \mathrm{\frac{1}{s}}$
 
@@ -1029,7 +1138,7 @@ rapidly replant native flora.
 Ni63 production.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{179}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{frequency} \PY{o}{=} \PY{p}{(}\PY{p}{(}\PY{l+m+mi}{2} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{MeV}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{J}\PY{p}{)} \PY{o}{/} \PY{n}{constants}\PY{o}{.}\PY{n}{h}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{Hz}\PY{p}{)}
 \PY{n}{frequency} 
@@ -1037,7 +1146,7 @@ Ni63 production.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{179}{}
+\prompt{Out}{outcolor}{ }{}
     
     $4.8359785 \times 10^{20} \; \mathrm{Hz}$
 
@@ -1065,7 +1174,7 @@ the crux of the system.
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{180}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{def} \PY{n+nf}{total\PYZus{}brehmsstrahlung\PYZus{}power}\PY{p}{(}\PY{n}{velocity}\PY{p}{,} \PY{n}{charge}\PY{p}{,} \PY{n}{acceleration}\PY{p}{)}\PY{p}{:}
   \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
@@ -1083,7 +1192,7 @@ the crux of the system.
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{181}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{total\PYZus{}brehmsstrahlung\PYZus{}power}\PY{p}{(}\PY{o}{.}\PY{l+m+mi}{0000001} \PY{o}{*} \PY{n}{constants}\PY{o}{.}\PY{n}{c}\PY{p}{,} \PY{l+m+mi}{1} \PY{o}{*} \PY{n}{constants}\PY{o}{.}\PY{n}{e}\PY{o}{.}\PY{n}{si}\PY{p}{,} \PY{o}{.}\PY{l+m+mi}{0000001} \PY{o}{*} 
                           \PY{n}{constants}\PY{o}{.}\PY{n}{c} \PY{o}{/} \PY{n}{units}\PY{o}{.}\PY{n}{s}\PY{p}{)}
@@ -1091,14 +1200,14 @@ the crux of the system.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{181}{}
+\prompt{Out}{outcolor}{ }{}
     
     $5.1303882 \times 10^{-51} \; \mathrm{W}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{182}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{total\PYZus{}energy\PYZus{}stored} \PY{o}{=} \PY{n}{half\PYZus{}life\PYZus{}Ni\PYZus{}63} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{s} \PY{o}{*} \PY{n}{power\PYZus{}Ni\PYZus{}63\PYZus{}per\PYZus{}gram}
 \PY{n}{total\PYZus{}energy\PYZus{}stored}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{TW} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{hour}\PY{p}{)} \PY{c+c1}{\PYZsh{}underestimate, and also per gram}
@@ -1106,7 +1215,7 @@ the crux of the system.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{182}{}
+\prompt{Out}{outcolor}{ }{}
     
     $2.5064712 \times 10^{-9} \; \mathrm{TW\,h}$
 
@@ -1116,7 +1225,7 @@ the crux of the system.
 the size of Pennsylvania could power the entire world.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{183}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}https://en.wikipedia.org/wiki/Andasol\PYZus{}Solar\PYZus{}Power\PYZus{}Station}
 \PY{n}{andasol} \PY{o}{=} \PY{l+m+mi}{2000} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{kW} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{hour} \PY{o}{/} \PY{p}{(}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{m} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2} \PY{p}{)} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{year}\PY{p}{)}
@@ -1126,14 +1235,14 @@ the size of Pennsylvania could power the entire world.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{183}{}
+\prompt{Out}{outcolor}{ }{}
     
     $228.15423 \; \mathrm{\frac{W}{m^{2}}}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{184}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{needed\PYZus{}area} \PY{o}{=} \PY{p}{(}\PY{n}{global\PYZus{}power\PYZus{}consumed} \PY{o}{/} \PY{n}{andasol\PYZus{}efficiency}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{km} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)}
 \PY{n}{needed\PYZus{}area} 
@@ -1141,14 +1250,14 @@ the size of Pennsylvania could power the entire world.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{184}{}
+\prompt{Out}{outcolor}{ }{}
     
     $62500 \; \mathrm{km^{2}}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{185}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{pennsylvania\PYZus{}area} \PY{o}{=} \PY{l+m+mf}{119281.9} \PY{o}{*} \PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{km} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)}
 \PY{n}{needed\PYZus{}area} \PY{o}{/} \PY{n}{pennsylvania\PYZus{}area}
@@ -1156,14 +1265,14 @@ the size of Pennsylvania could power the entire world.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{185}{}
+\prompt{Out}{outcolor}{ }{}
     
     $0.52396885 \; \mathrm{}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{186}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{neutrino\PYZus{}mass} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{1} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{keV} \PY{o}{/} \PY{p}{(}\PY{n}{constants}\PY{o}{.}\PY{n}{c} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{g}\PY{p}{)}
 \PY{n}{neutrino\PYZus{}mass}
@@ -1171,7 +1280,7 @@ the size of Pennsylvania could power the entire world.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{186}{}
+\prompt{Out}{outcolor}{ }{}
     
     $1.7826619 \times 10^{-30} \; \mathrm{g}$
 
@@ -1196,7 +1305,7 @@ won't evaluate the integral. So using sympy, where Q = .782 MeV, a =
 m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{187}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{Q\PYZus{}fermi\PYZus{}distr} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{p}{(}\PY{o}{.}\PY{l+m+mi}{782} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{MeV}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{J}\PY{p}{)} \PY{o}{/} \PY{n}{units}\PY{o}{.}\PY{n}{J}\PY{p}{)}
 \PY{n}{Q\PYZus{}fermi\PYZus{}distr}
@@ -1204,14 +1313,14 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{187}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 1.252902127788e-13
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{188}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{unnormalized\PYZus{}fermi\PYZus{}fun} \PY{o}{=} \PY{p}{(}\PY{p}{(}\PY{n}{Q} \PY{o}{\PYZhy{}} \PY{n}{x}\PY{p}{)} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{*} \PY{p}{(}\PY{n}{x} \PY{o}{+} \PY{n}{a}\PY{p}{)} \PY{o}{*} \PY{n}{sym}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}
     \PY{p}{(}\PY{n}{x} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{+} \PY{p}{(}\PY{l+m+mi}{2} \PY{o}{*} \PY{n}{a}\PY{p}{)}\PY{p}{)}
@@ -1220,7 +1329,7 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{189}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{a\PYZus{}fermi\PYZus{}distr} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{p}{(}\PY{n}{constants}\PY{o}{.}\PY{n}{m\PYZus{}e} \PY{o}{*} \PY{p}{(}\PY{n}{constants}\PY{o}{.}\PY{n}{c} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{J}\PY{p}{)} 
 \PY{o}{/} \PY{n}{units}\PY{o}{.}\PY{n}{J}\PY{p}{)}
@@ -1229,14 +1338,14 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{189}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 8.187105776823886e-14
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{190}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{c\PYZus{}to\PYZus{}the\PYZus{}fifth} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{p}{(}\PY{n}{constants}\PY{o}{.}\PY{n}{c} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{s} \PY{o}{/} \PY{n}{units}\PY{o}{.}\PY{n}{m}\PY{p}{)} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{5}\PY{p}{)}
 \PY{n}{c\PYZus{}to\PYZus{}the\PYZus{}fifth}
@@ -1244,14 +1353,14 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{190}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 2.4216061708512208e+42
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{191}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{integrated\PYZus{}dist} \PY{o}{=} \PY{n}{sym}\PY{o}{.}\PY{n}{lambdify}\PY{p}{(}\PY{p}{(}\PY{n}{Q}\PY{p}{,} \PY{n}{a}\PY{p}{)}\PY{p}{,} \PY{n}{denominator}\PY{p}{)}
 \PY{n}{fermi\PYZus{}distr\PYZus{}const} \PY{o}{=} \PY{n}{c\PYZus{}to\PYZus{}the\PYZus{}fifth} \PY{o}{/} \PY{n}{integrated\PYZus{}dist}\PY{p}{(}\PY{n}{Q\PYZus{}fermi\PYZus{}distr}\PY{p}{,} 
@@ -1260,7 +1369,7 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{192}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{fermi\PYZus{}distr\PYZus{}fun} \PY{o}{=} \PY{n}{C} \PY{o}{*} \PY{n}{unnormalized\PYZus{}fermi\PYZus{}fun} \PY{o}{/} \PY{n}{c\PYZus{}to\PYZus{}the\PYZus{}fifth}
 \PY{n}{fermi\PYZus{}distr} \PY{o}{=} \PY{n}{sym}\PY{o}{.}\PY{n}{lambdify}\PY{p}{(}\PY{p}{(}\PY{n}{Q}\PY{p}{,} \PY{n}{a}\PY{p}{,} \PY{n}{C}\PY{p}{,} \PY{n}{x}\PY{p}{)}\PY{p}{,} \PY{n}{fermi\PYZus{}distr\PYZus{}fun}\PY{p}{)}
@@ -1285,28 +1394,21 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
     
     
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{193}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{fermi\PYZus{}distr\PYZus{}fun}
 \end{Verbatim}
 \end{tcolorbox}
  
-<<<<<<< HEAD
-=======
- \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Images/plotly.PNG}
-    \end{center}
-    { \hspace*{\fill} \\}
->>>>>>> afb712505426e85d342894446788805dd65252fb
             
-\prompt{Out}{outcolor}{193}{}
+\prompt{Out}{outcolor}{ }{}
     
     $\displaystyle 4.12949063327043 \cdot 10^{-43} C \left(Q - x\right)^{2} \left(a + x\right) \sqrt{2 a + x^{2}}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{194}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{average\PYZus{}fun} \PY{o}{=} \PY{p}{(}\PY{n}{sym}\PY{o}{.}\PY{n}{integrate}\PY{p}{(}\PY{n}{fermi\PYZus{}distr\PYZus{}fun}\PY{p}{,} \PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{n}{fermi\PYZus{}distr\PYZus{}fun}\PY{p}{)}\PY{p}{)} \PY{o}{/} 
            \PY{n}{fermi\PYZus{}distr\PYZus{}fun}\PY{p}{)}
@@ -1316,21 +1418,21 @@ m\(_e\)c\(^2\), and \(x = T_e\) All units are in kg-m-s SI.
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-<lambdifygenerated-7>:2: RuntimeWarning:
+<string>:2: RuntimeWarning:
 
 invalid value encountered in double\_scalars
 
     \end{Verbatim}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{194}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 nan
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{195}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{def} \PY{n+nf}{normalized\PYZus{}counts}\PY{p}{(}\PY{n}{T\PYZus{}e}\PY{p}{,} \PY{n}{Q}\PY{p}{)}\PY{p}{:}
   \PY{n}{count} \PY{o}{=} \PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{p}{(}\PY{p}{(}\PY{n}{T\PYZus{}e} \PY{o}{*}\PY{o}{*}  \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{+} \PY{l+m+mi}{2} \PY{o}{*} \PY{p}{(}\PY{n}{T\PYZus{}e} \PY{o}{*} \PY{n}{m\PYZus{}e} \PY{o}{*} \PY{p}{(}\PY{n}{c} \PY{o}{*}\PY{o}{*} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}\PY{p}{)}\PY{p}{)} 
@@ -1340,21 +1442,21 @@ nan
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{196}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{fermi\PYZus{}distr\PYZus{}const}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{196}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 0.0
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{197}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
 \PY{l+s+sd}{We need to account for the fact that not all of the electrons will have the }
@@ -1369,7 +1471,7 @@ nan
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{197}{\boxspacing}
+\prompt{Out}{outcolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 '\textbackslash{}nWe need to account for the fact that not all of the electrons will have the
 \textbackslash{}nmaximum energy (Q value)!\textbackslash{}nstuck for right now.
@@ -1380,21 +1482,21 @@ out to 17 keV. Rewrite to draw from a database of beta emission \textbackslash{}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{198}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{global\PYZus{}power\PYZus{}consumed}
 \end{Verbatim}
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{198}{}
+\prompt{Out}{outcolor}{ }{}
     
     $1.425964 \times 10^{13} \; \mathrm{W}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{199}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{energy\PYZus{}Ni\PYZus{}63\PYZus{}per\PYZus{}gram} \PY{o}{=} \PY{p}{(}\PY{n}{power\PYZus{}Ni\PYZus{}63\PYZus{}per\PYZus{}gram} \PY{o}{*} \PY{l+m+mi}{50} \PY{o}{*} \PY{n}{units}\PY{o}{.}\PY{n}{year}\PY{p}{)}\PY{o}{.}\PY{n}{to}\PY{p}{(}\PY{n}{units}\PY{o}{.}\PY{n}{J}\PY{p}{)}
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
@@ -1406,22 +1508,23 @@ out to 17 keV. Rewrite to draw from a database of beta emission \textbackslash{}
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{199}{}
+\prompt{Out}{outcolor}{ }{}
     
     $4507141 \; \mathrm{J}$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{200}{\boxspacing}
+\prompt{In}{incolor}{1}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
 \PY{l+s+sd}{if google drive won\PYZsq{}t mount to the colab session, then}
 \PY{l+s+sd}{you need to download this current python notebook and upload}
 \PY{l+s+sd}{it to the colab session, then right click on it to copy the}
-\PY{l+s+sd}{path for the command below.}
+\PY{l+s+sd}{path for the command below. Only use a slash before the file}
+\PY{l+s+sd}{name in Colab.}
 \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
-\PY{o}{!}jupyter nbconvert \PYZhy{}\PYZhy{}to LaTeX /Energy.ipynb
+\PY{o}{!}jupyter nbconvert \PYZhy{}\PYZhy{}to LaTeX Energy.ipynb
 \PY{c+c1}{\PYZsh{}The above line makes a .tex file to format this Jupyter Notebook}
 \end{Verbatim}
 \end{tcolorbox}
@@ -1437,13 +1540,6 @@ Options
 -------
 
 
-    \end{Verbatim}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-[NbConvertApp] WARNING | pattern '/Energy.ipynb' matched no files
-    \end{Verbatim}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
 
 Arguments that take values are actually convenience aliases to full
 Configurables, whose aliases are listed on the help line. For more information
@@ -1614,6 +1710,13 @@ Examples
 'selectLanguage', 'slides', 'slides\_with\_lenvs'].
 
     > jupyter nbconvert --to latex mynotebook.ipynb
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+[NbConvertApp] WARNING | pattern '/Energy.ipynb' matched no files
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
 
     Both HTML and LaTeX support multiple output templates. LaTeX includes
     'base', 'article' and 'report'.  HTML includes 'basic' and 'full'. You
