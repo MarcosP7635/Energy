@@ -61,4 +61,13 @@ delta_tau = m_0 * (lambda_d * (sym.exp(-1 * tau * (1/lambda_d + 1/lambda_m)) - 1
 attempt = sym.integrate(delta_new * p, (tau, 0, t))
 eval_attempt = sym.lambdify(([t, lambda_m, lambda_d, m_0]), attempt, 'sympy')
 #specify the implementation of the function to be consistent with the input types
-print(eval_attempt(sym.N(0), sym.N(1), sym.N(1), sym.N(1)))
+#print(eval_attempt(sym.N(0), sym.N(1), sym.N(1), sym.N(1)))
+
+lambda_1, lambda_2, lambda_3, lambda_4, lambda_5 = sym.symbols('lambda_1 lambda_2 lambda_3 lambda_4 lambda_5',
+                                                            positive = True, real = True)
+l = np.array([lambda_1, lambda_2, lambda_3, lambda_4, lambda_5])
+alpha = sym.integrate(np.product([1 - sym.exp(t / (- l_j)) for l_j in l]), (t, 0, tau))
+evaluate_alpha = sym.lambdify(([tau]), alpha, 'sympy')
+time = np.linspace(0, 5, 100)
+abundance = [evaluate_alpha(sym.N(t)).round(6) for t in time] 
+abundance.to_csv('abundance.csv')
