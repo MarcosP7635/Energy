@@ -1,3 +1,21 @@
+import astropy.units as units
+import astropy.constants as constants
+import matplotlib.pyplot as plt
+import sympy as sym
+import numpy as np 
+import pandas as pd
+import plotly.express as px
+import plotly.figure_factory as ff
+import plotly.graph_objects as go
+import requests
+import re
+import subprocess
+import urllib.request
+from sympy.abc import *
+from bs4 import BeautifulSoup
+cwd = subprocess.os.getcwd()
+
+
 def half_life_to_lambda(half_life):
     '''
     This function takes the e-folding times of the entire decay chain.
@@ -98,9 +116,6 @@ def calc_power_density(decay_rates, decay_energies, initial_mass):
     return np.abs(power_density.astype(float))
 
 
-all_decay_chains = [make_decay_chain(isotope, isotope_list, lambda_list, decay_energy_list, daughter_list) 
-                    for isotope in isotope_list]
-time_array = np.logspace(1, 9.5, 10)
 def calculate_all_power_densities(all_decay_chains, time_array, mean = True):
     '''
     This function takes the isotope, e-folding times, and daughter nuclides

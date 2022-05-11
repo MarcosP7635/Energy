@@ -15,7 +15,7 @@ from sympy.abc import *
 from bs4 import BeautifulSoup
 cwd = subprocess.os.getcwd()
 
-import fastDecayChainFunctions 
+from fastDecayChainFunctions import *
 
 try: 
     nuclide_df = pd.read_csv(cwd + '\\NuclideData.csv').iloc[:,1:]
@@ -48,3 +48,9 @@ isotope_list = list(nuclide_df['Isotope'])
 lambda_list = list(nuclide_df['e Folding Time (seconds)'])
 decay_energy_list = list(nuclide_df['Average beta decay energy'])
 daughter_list = list(nuclide_df['Daugher Nucleus'])
+
+all_decay_chains = [make_decay_chain(isotope, isotope_list, lambda_list, decay_energy_list, daughter_list) 
+                    for isotope in isotope_list]
+time_array = np.logspace(1, 9.5, 10)
+
+mean_power_densities = calculate_all_power_densities(all_decay_chains[:2], time_array, mean = True)
