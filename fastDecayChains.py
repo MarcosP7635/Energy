@@ -1,19 +1,3 @@
-import astropy.units as units
-import astropy.constants as constants
-import matplotlib.pyplot as plt
-import sympy as sym
-import numpy as np 
-import pandas as pd
-import plotly.express as px
-import plotly.figure_factory as ff
-import plotly.graph_objects as go
-import requests
-import re
-import subprocess
-import urllib.request
-from sympy.abc import *
-from bs4 import BeautifulSoup
-cwd = subprocess.os.getcwd()
 
 from fastDecayChainFunctions import *
 
