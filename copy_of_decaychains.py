@@ -211,19 +211,19 @@ def clean_time_series(time_series):
     split_time_series = time_series.replace('[', ' ').replace(']', ' ').replace('\n', ' ').split(' ') 
     return np.round(np.array([float(power_density)  
                     for power_density in split_time_series 
-                    if len(power_density)>0]), 2)
+                    if len(power_density)>0]), 3)
 
-time_series_file_path = cwd + '\\MeanPowerDensitiesofDecayChains\\power_density_time_series.csv'
+time_series_file_path = cwd + '\MeanPowerDensitiesofDecayChains\power_density_time_series.csv'
 #read the file to a numpy array
 with open(time_series_file_path, newline='\n') as f:
     reader = csv.reader(f)
     time_series_unclean = list(reader)[0]
 power_densities_dict = {}
-power_densities_dict['Time (seconds)'] = np.logspace(0, 9.5, 10**3)
+power_densities_dict['Time (years)'] = np.logspace(0, 9.5, 10**3) * float(units.second.to(units.year))
 for row, chain in enumerate(all_decay_chains):
     power_densities_dict[chain.index[0]] = clean_time_series(time_series_unclean[row])
 power_densities_df = pd.DataFrame.from_dict(power_densities_dict).set_index(
-                        'Time (seconds)')
+                        'Time (years)')
 power_densities_df
 
 #plot multiple scatterplots together with hover names
@@ -231,18 +231,20 @@ indices = power_densities_df.index
 
 #plot multiple scatterplots together with hover names
 indices = power_densities_df.index
-min_time = 10**8.5
+min_time = 1
 for index in indices:
     if index > min_time:
         min_time = index
         break
-
+min_index = indices.get_loc(min_time)
+print(min_index)
 fig = go.Figure()
 for column in power_densities_df.columns:
     if (power_densities_df[column][min_time] > 0):
-        fig.add_traces(go.Scatter(x = indices, y = power_densities_df[column], 
+        fig.add_traces(go.Scatter(x = indices[min_index:], 
+        y = power_densities_df[column][min_time:], 
         mode='markers', name = column)) 
-fig.update_xaxes(type = 'log', title = 'Time (seconds)')
+fig.update_xaxes(title = 'Time (years)')
 fig.update_yaxes(title = 'Power Density (W/g)', type = 'log')
 fig.update_layout(title = 'Power Density as a Function of Time')
 print("Made the figure")
