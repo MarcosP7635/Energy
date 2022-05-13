@@ -228,14 +228,23 @@ power_densities_df
 
 #plot multiple scatterplots together with hover names
 indices = power_densities_df.index
-'''
+
+#plot multiple scatterplots together with hover names
+indices = power_densities_df.index
+min_time = 10**8.5
+for index in indices:
+    if index > min_time:
+        min_time = index
+        break
+
 fig = go.Figure()
 for column in power_densities_df.columns:
-    if (power_densities_df[column][indices[0]] > 0):
+    if (power_densities_df[column][min_time] > 0):
         fig.add_traces(go.Scatter(x = indices, y = power_densities_df[column], 
         mode='markers', name = column)) 
 fig.update_xaxes(type = 'log', title = 'Time (seconds)')
 fig.update_yaxes(title = 'Power Density (W/g)', type = 'log')
 fig.update_layout(title = 'Power Density as a Function of Time')
+print("Made the figure")
 fig.show()
-'''
+
