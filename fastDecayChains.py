@@ -2,9 +2,9 @@
 from fastDecayChainFunctions import *
 
 try: 
-    nuclide_df = pd.read_csv(cwd + '\\NuclideData.csv').iloc[:,1:]
+    nuclide_df = pd.read_csv('NuclideData.csv').iloc[:,1:]
 except:
-    nuclide_df = pd.read_csv(cwd + '/NuclideData.csv').iloc[:,1:]
+    nuclide_df = pd.read_csv('NuclideData.csv').iloc[:,1:]
 half_lives = nuclide_df['Half life (years)'].to_numpy() 
 nuclide_df["e Folding Time (seconds)"] = half_life_to_lambda(half_lives * units.year.to(units.s))
 
@@ -35,6 +35,13 @@ daughter_list = list(nuclide_df['Daugher Nucleus'])
 
 all_decay_chains = [make_decay_chain(isotope, isotope_list, lambda_list, decay_energy_list, daughter_list) 
                     for isotope in isotope_list]
-time_array = np.logspace(1, 9.5, 10)
+time_array = np.logspace(0, 9.5, 10**3)
 
-mean_power_densities = calculate_all_power_densities(all_decay_chains[:2], time_array, mean = True)
+power_density_time_series = calculate_all_power_densities(all_decay_chains, 
+  time_array, mean = False)
+
+with open('power_density_time_series.csv', 'w') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(power_density_time_series)
+
+print("Done!")
