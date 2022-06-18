@@ -1,0 +1,575 @@
+B.1 Reaction Type Numbers MT
+MT Description Comments
+1 (n,total) Neutron total cross sections. (See sum
+rules for cross sections in Section 0.4.3.11
+Table 14).
+Redundant. Un-
+defined for incident
+charged particles.
+2 (z,z0) Elastic scattering cross section for incident
+particles.
+321
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+3 (z,nonelas.) Nonelastic neutron cross section. (See sum
+rules for cross sections in Section 0.4.3.11
+Table 14).
+Redundant. For
+photon production
+only.
+4 (z,n) Production of one neutron in the exit chan-
+nel. Sum of MT=50-91.
+Redundant. For in-
+cident neutrons, this
+is inelastic scatter-
+ing (MT=50 is un-
+defined).
+5 (z,anything) Sum of all reactions not given explicitly in
+another MT number. This is a partial re-
+action to be added to obtain MT=1.
+Each particle can
+be identified and its
+multiplicity given in
+File 6. Not allowed
+in Files 4, 5.
+6-9 Not allowed in Version 6. 9Be(n,2n) in format
+Version 5.
+10 (z,contin.) Total continuum reaction; includes all con-
+tinuum reactions and excludes all discrete
+reactions.
+Redundant; to be
+used for derived files
+only.
+11 (z,2nd) Production of two neutrons and a
+deuteron, plus a residual 1.
+12-15 Unassigned.
+16 (z,2n) Production of two neutrons and a resid-
+ual1. Sum of MT=875-891, if they are
+present.
+17 (z,3n) Production of three neutrons and a resid-
+ual.
+18 (z,fission) Particle-induced fission (sum of MT 19, 20,
+21 and 38, if present).
+19 (n,f) First-chance neutron-induced fission 2.
+20 (n,nf) Second-chance neutron-induced fission2.
+21 (n,2nf) Third-chance neutron-induced fission2.
+22 (z,nα) Production of a neutron and an alpha par-
+ticle, plus a residual.
+23 (n,n3α) Production of a neutron and three alpha
+particles, plus a residual1.
+24 (z,2nα) Production of two neutrons and an alpha
+particle, plus a residual1.
+25 (z,3nα) Production of three neutrons and an alpha
+particle, plus a residual1.
+1The “residual” is the remainder after the reaction specified by has taken place (e.g. isotope of the target
+nucleus with mass A − 1 after an (n,2n) reaction). This residual may break up further if LR>0
+2Note that the partial fission cross sections are not defined for charged particles.
+322
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+26 Not allowed in Version 6. Version 5: (n,2n)
+isomeric state; used
+in file 8 and 6, 9, or
+10.
+27 (n,abs) Absorption; sum of MT=18, 102-117, 155,
+182, 191-193, 197
+Rarely used.
+28 (z,np) Production of a neutron and a proton, plus
+a residual.
+29 (z,n2α) Production of a neutron and two alpha par-
+ticles, plus a residual.
+30 (z,2n2α) Production of two neutrons and two alpha
+particles, plus a residual.
+31 Not allowed for Version 6. Used only as an LR
+flag.
+32 (z,nd) Production of a neutron and a deuteron,
+plus a residual.
+33 (z,nt) Production of a neutron and a triton, plus
+a residual.
+34 (z,n3He) Production of a neutron and a 3He particle,
+plus a residual.
+35 (z,nd2α) Production of a neutron, a deuteron, and
+2 alpha particles, plus a residual.
+36 (z,nt2α) Production of a neutron, a triton, and 2 al-
+pha particles, plus a residual.
+37 (z,4n) Production of 4 neutrons, plus a residual.
+38 (n,3nf) Fourth-chance fission cross section.
+39 Not allowed for Version 6. Used only as an LR
+flag.
+40 Not allowed for Version 6. Used only as an LR
+flag.
+41 (z,2np) Production of 2 neutrons and a proton,
+plus a residual.
+42 (z,3np) Production of 3 neutrons and a proton,
+plus a residual.
+43 (Unassigned)
+44 (z,n2p) Production of a neutron and 2 protons,
+plus a residual.
+45 (z,npα) Production of a neutron, a proton, and an
+alpha particle, plus a residual.
+46-49 Not allowed in Version 6. Version 5: descrip-
+tion of 2nd neutron
+from 9Be(n,2n) re-
+actions to excited
+states.
+323
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+50 (y,n0) Production of a neutron, leaving the resid-
+ual nucleus in the ground state.
+Not allowed for in-
+cident neutrons; use
+MT=2.
+51 (z,n1) Production of a neutron, with residual in
+the 1st excited state.
+52 (z,n2) Production of a neutron, with residual in
+the 2nd excited state.
+. . .
+90 (z,n40) Production of a neutron, with residual in
+the 40th excited state.
+91 (z,nc) Production of a neutron in the continuum
+not included in the above discrete repre-
+sentation.
+92-100 (Unassigned)
+101 (n,disap) Neutron disappearance; equal to sum of
+MT=102-117, 155, 182, 191-193, 197.
+Rarely used.
+102 (z,γ) Radiative capture.
+103 (z,p) Production of a proton, plus a residual.
+Sum of MT=600-649, if they are present.
+For incident pro-
+tons, this is in-
+elastic scattering
+(MT=600 is unde-
+fined).
+104 (z,d) Production of a deuteron, plus a residual.
+Sum of MT=650-699, if they are present.
+For incident
+deuterons, this
+is inelastic scatter-
+ing (MT=650 is
+undefined).
+105 (z,t) Production of a triton, plus a residual.
+Sum of MT=700-749, if they are present.
+For incident tritons,
+this is inelastic scat-
+tering (MT=700 is
+undefined).
+106 (z,3He) Production of a 3He particle plus a resid-
+ual. Sum of MT=750-799, if they are
+present.
+107 (z,α) Production of an alpha particle, plus a
+residual. Sum of MT=800-849, if they are
+present.
+108 (z,2α) Production of 2 alpha particles, plus a
+residual.
+109 (z,3α) Production of 3 alpha particles, plus a
+residual.
+110 (Unassigned)
+111 (z,2p) Production of 2 protons, plus a residual.
+324
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+112 (z,pα) Production a proton and an alpha particle,
+plus a residual.
+113 (z,t2α) Production of a triton and 2 alpha parti-
+cles, plus a residual.
+114 (z,d2α) Production of a deuteron and 2 alpha par-
+ticles, plus a residual.
+115 (z,pd) Production of proton and a deuteron, plus
+a residual.
+116 (z,pt) Production of proton and a triton, plus a
+residual.
+117 (z,dα) Production of deuteron and an alpha par-
+ticle, plus a residual.
+118-119 (Unassigned)
+120 Not allowed for Version 6. Version 5: tar-
+get destruction -
+nonelastic minus
+total (n,n’γ)
+121-150 (Unassigned)
+151 (n,RES) Resonance parameters that can be used to
+calculate cross sections at different temper-
+atures in the resolved and unresolved en-
+ergy regions.
+Incident neutrons
+only.
+152 (z,5n) Production of five neutrons plus a residual Additional open
+channels for inci-
+dent energies up to
+60 Mev. Indicates
+the production of
+the defined particles
+and a residual
+153 (z,6n) Production of six neutron, plus a residual
+154 (z,2nt) Production of two neutrons, a triton, plus
+a residual
+155 (z,tα) Production of a triton, an alpha particle,
+plus a residual
+156 (z,4np) Production of four neutrons, a proton, plus
+a residual
+157 (z,3nd) Production of three neutrons, a deuteron,
+plus a residual
+158 (z,n’dα) Production of a neutron, deuteron, an al-
+pha particle, plus a residual
+159 (z,2npα) Production of two neutrons, a proton, an
+alpha particle, plus a residual
+160 (z,7n) Production of seven neutrons plus a resid-
+ual
+325
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+161 (z,8n) Production of eight neutrons plus a resid-
+ual
+162 (z,5np) Production of five neutrons, a proton, plus
+a residual
+163 (z,6np) Production of six neutrons, a proton, plus
+a residual
+164 (z,7np) Production of seven neutrons, a proton,
+plus a residual
+165 (z,4nα) Production of four neutrons, an alpha par-
+ticle, plus a residual
+166 (z,5nα) Production of five neutrons, an alpha par-
+ticle, plus a residual
+167 (z,6nα) Production of six neutrons, an alpha par-
+ticle, plus a residual
+168 (z,7nα) Production of seven enutrons, an alpha
+particle, plus a residual
+169 (z,4nd) Production of four neutrons, a deuteron,
+plus a residual
+170 (z,5nd) Production of five neutrons, a deuteron,
+plus a residual
+171 (z,6nd) Production of six neutrons, a deuteron,
+plus a residual
+172 (z,3nt) Production of three neutrons, a triton, plus
+a residual
+173 (z,4nt) Production of four neutrons, a triton, plus
+a residual
+174 (z,5nt) Production of five neutrons, a triton, plus
+a residual
+175 (z,6nt) Production of six neutrons, a triton, plus
+a residual
+176 (z,2n3He) Production of two neutrons, a helion, plus
+a residual
+177 (z,3n3He) Production of three neutrons, a helion,
+plus a residual
+178 (z,4n3He) Production of four neutrons, a helion, plus
+a residual
+179 (z,3n2p) Production of three neutrons, a proton,
+plus a residual
+180 (z,3n2α) Production of three neutrons, two alpha
+particles, plus a residual
+181 (z,3npα) Production of three neutrons, a proton, an
+alpha particle, plus a residual
+182 (z,dt) Production of a deuteron, a triton, plus a
+residual
+326
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+183 (z,n’pd) Production of a neutron, a proton, a
+deuteron, plus a residual
+184 (z,n’pt) Production of a neutron, a proton, a triton,
+plus a residual
+185 (z,n’dt) Production of a neutron, a deuteron, a tri-
+ton, plus a residual
+186 (z,n’p3He) Production of a neutron,a proton, a helion,
+plus a residual
+187 (z,n’d3He) Production of a neutron, a deuteron, a he-
+lion, plus a residual
+188 (z,n’t3He) Production of a neutron, a triton, a helion,
+plus a residual
+189 (z,n’tα) Production of a neutron, a triton, an alpha
+particle, plus a residual
+190 (z,2n2p) Production of two neutrons, two protons,
+plus a residual
+191 (z,p3He) Production of a proton, a helion, plus a
+residual
+192 (z,d3He) Production of a deuteron, a helion, plus a
+residual
+193 (z,3Heα) Production of a helion, an alpha particle,
+plus a residual
+194 (z,4n2p) Production of four neutrons, two protons,
+plus a residual
+195 (z,4n2α) Production of four neutrons, two alpha
+particles, plus a residual
+196 (z,4npα) Production of four neutrons, a proton, an
+alpha particle, plus a residual
+197 (z,3p) Production of three protons, plus a resid-
+ual
+198 (z,n’3p) Production of a neutron, three protons,
+plus a residual
+199 (z,3n2pα) Production of three neutrons, two protons,
+an alpha particle, plus a residual
+200 (z,5n2p) Production of five neutrons, two protons,
+plus a residual
+201 (z,Xn) Total neutron production. Redundant; use in
+derived files only.
+202 (z,Xγ) Total gamma production. Redundant; use in
+derived files only.
+203 (z,Xp) Total proton production. Redundant; use in
+derived files only.
+204 (z,Xd) Total deuteron production. Redundant; use in
+derived files only.
+327
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+205 (z,Xt) Total triton production. Redundant; use in
+derived files only.
+206 (z,X3He) Total 3He production. Redundant; use in
+derived files only.
+207 (z,Xα) Total alpha particle production. Redundant; use in
+derived files only.
+208 (z,Xπ+) Total π+ production. For use in high-
+energy evaluations.
+209 (z,Xπ0) Total π0 production. For use in high-
+energy evaluations.
+210 (z,Xπ−) Total π− production. For use in high-
+energy evaluations.
+211 (z,Xμ+) Total μ+ production. For use in high-
+energy evaluations.
+212 (z,Xμ−) Total μ− production. For use in high-
+energy evaluations.
+213 (z,Xκ+) Total κ+ production. For use in high-
+energy evaluations.
+214 (z,Xκ0
+long ) Total κ0
+long production. For use in high-
+energy evaluations.
+215 (z,Xκ0
+short) Total κ0
+short production. For use in high-
+energy evaluations.
+216 (z,Xκ−) Total κ− production. For use in high-
+energy evaluations.
+217 (z,Xp−) Total anti-proton production. For use in high-
+energy evaluations.
+218 (z,Xn−) Total anti-neutron production. For use in high-
+energy evaluations.
+219-250 (Unassigned)
+251 (n,...) μ, average cosine of the scattering angle
+(laboratory system) for elastic scattering
+of neutrons.
+Derived files only.
+252 (n,...) ξ, average logarithmic energy decrement
+for elastic scattering of neutrons.
+Derived files only.
+253 (n,...) γ, average of the square of the logarith-
+mic energy decrement divided by twice the
+average logarithmic energy decrement, for
+elastic scattering of neutrons.
+Derived files only.
+254-300 (Unassigned)
+301-450 (z,...) Energy release parameters (eV-barns), for
+total and partial cross sections; MT=
+300 plus the reaction MT number, e.g.,
+MT=302 is the elastic scattering kerma.
+Derived files only.
+328
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+451 (z,...) Heading or title information; given in File 1
+only.
+452 (z,...) νT , average total (prompt plus delayed)
+number of neutrons released per fission
+event.
+453 (Unassigned)
+454 (z,...) Independent fission product yield data.
+455 (z,...) νd, average number of delayed neutrons re-
+leased per fission event.
+456 (z,...) νp, average number of prompt neutrons re-
+leased per fission event.
+457 (z,...) Radioactive decay data.
+458 (n,...) Energy release in fission for incident neu-
+trons.
+459 (z,...) Cumulative fission product yield data.
+460 (z,...) Delayed fission photons.
+461-464 (Unassigned)
+465-466 Not allowed in Version 6. Version 5: delayed
+and prompt neu-
+trons from sponta-
+neous fission.
+467-499 (Unassigned)
+500 Total charged-particle stopping power.
+501 Total photo- or electro-atomic interaction.
+502 Photon coherent scattering.
+503 (Unassigned)
+504 Photon incoherent scattering.
+505 Imaginary scattering factor.
+506 Real scattering factor.
+507-514 (Unassigned)
+515 Pair production, electron field.
+516 Pair production; sum of MT=515, 517. Redundant.
+517 Pair production, nuclear field.
+518 Not allowed in Version 6.
+519-521 (Unassigned)
+522 Ionization (sum of all subshells) Version 5:
+MT=602.
+523 Photo-excitation cross section.
+524 (Unassigned)
+525 Large angle scattering.
+526 Total electro-atomic scattering.
+527 Electro-atomic bremsstrahlung.
+528 Electro-atomic excitation cross section.
+329
+.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+529-531 (Unassigned)
+532 Not allowed in Version 6. Version 5: (γ,n).
+533 Atomic relaxation data. Version 5: total
+photonuclear
+534 K (1s1/2) subshell photoelectric or electro-
+atomic cross section.
+535 L1 (2s1/2) subshell photoelectric or electro-
+atomic cross section.
+536 L2 (2p1/2) subshell photoelectric or electro-
+atomic cross section.
+537 L3 (2p3/2) subshell photoelectric or electro-
+atomic cross section.
+538 M1 (3s1/2) subshell photoelectric or electro-
+atomic cross section.
+539 M2 (3p1/2) subshell photoelectric or electro-
+atomic cross section.
+540 M3 (3p3/2) subshell photoelectric or electro-
+atomic cross section.
+541 M4 (3d3/2) subshell photoelectric or electro-
+atomic cross section.
+542 M5 (3d5/2) subshell photoelectric or electro-
+atomic cross section.
+543 N1 (4s1/2) subshell photoelectric or electro-
+atomic cross section.
+544 N2 (4p1/2) subshell photoelectric or electro-
+atomic cross section.
+545 N3 (4p3/2) subshell photoelectric or electro-
+atomic cross section.
+546 N4 (4d3/2) subshell photoelectric or electro-
+atomic cross section.
+547 N5 (4d5/2) subshell photoelectric or electro-
+atomic cross section.
+548 N6 (4f5/2) subshell photoelectric or electro-
+atomic cross section.
+549 N7 (4f7/2) subshell photoelectric or electro-
+atomic cross section.
+550 O1 (5s1/2) subshell photoelectric or electro-
+atomic cross section.
+551 O2 (5p1/2) subshell photoelectric or electro-
+atomic cross section.
+552 O3 (5p3/2) subshell photoelectric or electro-
+atomic cross section.
+553 O4 (5d3/2) subshell photoelectric or electro-
+atomic cross section.
+330
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+554 O5 (5d5/2) subshell photoelectric or electro-
+atomic cross section.
+555 O6 (5f5/2) subshell photoelectric or electro-
+atomic cross section.
+556 O7 (5f7/2) subshell photoelectric or electro-
+atomic cross section.
+557 O8 (5g7/2) subshell photoelectric or electro-
+atomic cross section.
+558 O9 (5g9/2) subshell photoelectric or electro-
+atomic cross section.
+559 P1 (6s1/2) subshell photoelectric or electro-
+atomic cross section.
+560 P2 (6p1/2) subshell photoelectric or electro-
+atomic cross section.
+561 P3 (6p3/2) subshell photoelectric or electro-
+atomic cross section.
+562 P4 (6d3/2) subshell photoelectric or electro-
+atomic cross section.
+563 P5 (6d5/2) subshell photoelectric or electro-
+atomic cross section.
+564 P6 (6f5/2) subshell photoelectric or electro-
+atomic cross section.
+565 P7 (6f7/2) subshell photoelectric or electro-
+atomic cross section.
+566 P8 (6g7/2) subshell photoelectric or electro-
+atomic cross section.
+567 P9 (6g9/2) subshell photoelectric or electro-
+atomic cross section.
+568 P10 (6h9/2) subshell photoelectric or electro-
+atomic cross section.
+569 P11 (6h11/2) subshell photoelectric or electro-
+atomic cross section.
+570 Q1 (7s1/2) subshell photoelectric or electro-
+atomic cross section.
+571 Q2 (7p1/2) subshell photoelectric or electro-
+atomic cross section.
+572 Q3 (7p3/2) subshell photoelectric or electro-
+atomic cross section.
+573-599 (Unassigned)
+600 (z,p0) Production of a proton leaving the residual
+nucleus in the ground state.
+Not allowed for in-
+cident protons; use
+MT=2.
+601 (z,p1) Production of a proton, with residual in
+the 1st excited state.
+331
+B.1. REACTION TYPE NUMBERS MT
+MT Description Comments
+602 (z,p2) Production of a proton, with residual in
+the 2nd excited state.
+Version 5: photo-
+electric absorption;
+see MT=522.
+603 (z,p3) Production of a proton, with residual in
+the 3rd excited state.
+604 (z,p4) Production of a proton, with residual in
+the 4th excited state.
+. . .
+649 (z,pc) Production of a proton in the continuum
+not included in the above discrete repre-
+sentation.
+650 (z,d0) Production of a deuteron leaving the resid-
+ual nucleus in the ground state.
+651 (z,d1) Production of a deuteron, with the residual
+in the 1st excited state.
+652 (z,d2) Production of a deuteron, with the residual
+in the 2nd excited state.
+. . .
+699 (z,dc) Production of a deuteron in the continuum
+not included in the above discrete represen-
+tation.
+700 (z,t0) Production of a triton leaving the residual
+nucleus in the ground state.
+701 (z,t1) Production of a triton, with residual in the
+1st excited state.
+702 (z,t2) Production of a triton, with residual in the
+2nd excited state.
+. . .
+749 (z,tc) Production of a triton in the continuum
+not included in the above discrete repre-
+sentation.
+750 (n,3He0) Production of a 3He particle leaving the
+residual nucleus in the ground state.
+751 (n,3He1) Production of a 3He, with residual in the
+1st excited state.
+. . .
+799 (n,3Hec) Production of a 3He in the continuum not
+included in the above discrete representa-
+tion.
+800 (z,α0) Production of an alpha particle leaving the
+residual nucleus in the ground state.
+801 (z,α1) Production of an alpha particle, with resid-
+ual in the 1st excited state.
+332
+B.2. RESIDUAL BREAKUP FLAGS LR
+MT Description Comments
+. . .
+849 (z,αc) Production of an alpha particle in the con-
+tinuum not included in the above discrete
+representation.
+850 (Unassigned)
+851-870 Lumped reaction covariances.
+871-874 (Unassigned)
+875 (z,2n0) Production of 2 neutrons with residual in
+the ground state.
+876 (z,2n1) Production of 2 neutrons with residual in
+the 1st excited state.
+. . .
+891 (z,2nc) Production of 2 neutrons in the continuum
+not included in the above discrete repre-
+sentation.
+892-999 (Unassigned
