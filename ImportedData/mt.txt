@@ -61,8 +61,8 @@ particles, plus a residual1.
 particle, plus a residual1.
 25 (z,3nα) Production of three neutrons and an alpha
 particle, plus a residual1.
-1The “residual” is the remainder after the reaction specified by has taken place (e.g. isotope of the target
-nucleus with mass A − 1 after an (n,2n) reaction). This residual may break up further if LR>0
+1The "residual" is the remainder after the reaction specified by has taken place (e.g. isotope of the target
+nucleus with mass A - 1 after an (n,2n) reaction). This residual may break up further if LR>0
 2Note that the partial fission cross sections are not defined for charged particles.
 322
 B.1. REACTION TYPE NUMBERS MT
@@ -186,7 +186,7 @@ ticle, plus a residual.
 120 Not allowed for Version 6. Version 5: tar-
 get destruction -
 nonelastic minus
-total (n,n’γ)
+total (n,n'y)
 121-150 (Unassigned)
 151 (n,RES) Resonance parameters that can be used to
 calculate cross sections at different temper-
@@ -351,7 +351,7 @@ Derived files only.
 252 (n,...) ξ, average logarithmic energy decrement
 for elastic scattering of neutrons.
 Derived files only.
-253 (n,...) γ, average of the square of the logarith-
+253 (n,...) y, average of the square of the logarith-
 mic energy decrement divided by twice the
 average logarithmic energy decrement, for
 elastic scattering of neutrons.
@@ -412,7 +412,7 @@ MT=602.
 .1. REACTION TYPE NUMBERS MT
 MT Description Comments
 529-531 (Unassigned)
-532 Not allowed in Version 6. Version 5: (γ,n).
+532 Not allowed in Version 6. Version 5: (y,n).
 533 Atomic relaxation data. Version 5: total
 photonuclear
 534 K (1s1/2) subshell photoelectric or electro-
