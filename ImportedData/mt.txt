@@ -331,12 +331,10 @@ energy evaluations.
 energy evaluations.
 213 (z,Xκ+) Total κ+ production. For use in high-
 energy evaluations.
-214 (z,Xκ0
-long ) Total κ0
+214 (z,Xκ0 long ) Total κ0
 long production. For use in high-
 energy evaluations.
-215 (z,Xκ0
-short) Total κ0
+215 (z,Xκ0 short) Total κ0
 short production. For use in high-
 energy evaluations.
 216 (z,Xκ−) Total κ− production. For use in high-
