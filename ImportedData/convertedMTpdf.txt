@@ -1,39 +1,6 @@
-         Appendix B
-
-
-
-         Deﬁnition of Reaction Types
-
-
-
-         Reaction types (MT) are identiﬁed by an integer number from 1 through 999. Version
-         ENDF-6 of the ENDF format supports incident charged particles and photons in a manner
-         consistent with the deﬁnitions of MT’s used in previous versions of the ENDF format to the
-         extent possible. Users should be aware of the few diﬀerences. In the following table, those
-         MT numbers restricted to incident neutrons are labeled (n,xxx); those that are limited to
-         incident charged particles and photons are labeled (y,xxx) and those that allow all particles
-         in the entrance channel are labeled (z,xxx), where x can represent any exit particle. See
-         Section0for complete descriptions of MT numbers. Refer to Sections3.4(incident neutrons)
-         and3.5(incident charged particles and photons) for the list of MT numbersthat should be
-         included in each evaluation.
-            For the ENDF-6 format, all particles in the exit channel are named (within the parenthe-
-         sis) except for the residual. The identity of this residual can be speciﬁed explicitly in File 6
-         or determined implicitly from the MT number. In cases where more than one MT might
-         describe a reaction, the choice of MT number is then determined by the residual which is the
-         heaviest of the particles (AZ,A) in the exit channel. For example, 6 Li(n,t)αis represented by
-          MT=700, rather than my MT=800; and MT=32 represents the 6 Li(n,nd)αreaction rather
-          than MT=22. Sequential reaction mechanism descriptions can be used, where necessary, for
-          reactions such as X(n,np)Y. These are described in Sections0.4.3.3and0.4.3.4.
-
-
-
-
-         B.1 Reaction Type Numbers MT
-
-
           MT             Description                      Comments
           1      (n,total)   Neutron total cross sections. (See sum Redundant. Un-
-                           rules for cross sections in Section0.4.3.11 deﬁned for incident
+                           rules for cross sections in Section0.4.3.11 defined for incident
                            Table14).                        charged particles.
           2      (z,z0)     Elastic scattering cross section for incident
                            particles.
@@ -50,16 +17,16 @@
                            nel. Sum of MT=50-91.              cident neutrons, this
                                                            is inelastic scatter-
                                                            ing (MT=50 is un-
-                                                           deﬁned).
+                                                           defined).
           5      (z,anything)Sum of all reactions not given explicitly in Each particle can
-                           another MT number. This is a partial re- be identiﬁed and its
+                           another MT number. This is a partial re- be identified and its
                            action to be added to obtain MT=1.     multiplicity given in
                                                            File 6. Not allowed
                                                            in Files 4, 5.
           6-9              Not allowed in Version 6.             9 Be(n,2n) in format
                                                            Version 5.
           10     (z,contin.)  Total continuum reaction; includes all con- Redundant; to be
-                           tinuum reactions and excludes all discrete used for derived ﬁles
+                           tinuum reactions and excludes all discrete used for derived files
                            reactions.                        only.
           11     (z,2nd)    Production of two neutrons and a
                            deuteron, plus a residual 1 .
@@ -69,11 +36,11 @@
                            present.
           17     (z,3n)     Production of three neutrons and a resid-
                            ual.
-          18     (z,ﬁssion)  Particle-induced ﬁssion (sum of MT 19, 20,
+          18     (z,fission)  Particle-induced fission (sum of MT 19, 20,
                            21 and 38, if present).
-          19     (n,f)      First-chance neutron-induced ﬁssion 2 .
-          20     (n,nf)     Second-chance neutron-induced ﬁssion 2 .
-          21     (n,2nf)    Third-chance neutron-induced ﬁssion 2 .
+          19     (n,f)      First-chance neutron-induced fission 2 .
+          20     (n,nf)     Second-chance neutron-induced fission 2 .
+          21     (n,2nf)    Third-chance neutron-induced fission 2 .
           22     (z,nα)     Production of a neutron and an alpha par-
                            ticle, plus a residual.
           23     (n,n3α)    Production of a neutron and three alpha
@@ -85,16 +52,16 @@
 
 
 
-           1 The “residual” is the remainder after the reaction speciﬁed by has taken place (e.g.isotope of the target
+           1 The “residual” is the remainder after the reaction specified by has taken place (e.g.isotope of the target
           nucleus with massA−1 after an (n,2n) reaction). This residual may break up further if LR>0
-           2 Note that the partial ﬁssion cross sections are not deﬁned for charged particles.
+           2 Note that the partial fission cross sections are not defined for charged particles.
 
                                          322         B.1. REACTION TYPE NUMBERS MT
 
           MT             Description                      Comments
           26               Not allowed in Version 6.             Version 5: (n,2n)
                                                            isomeric state; used
-                                                           in ﬁle 8 and 6, 9, or
+                                                           in file 8 and 6, 9, or
                                                            10.
           27     (n,abs)    Absorption; sum of MT=18, 102-117, 155, Rarely used.
                            182, 191-193, 197
@@ -117,7 +84,7 @@
           36     (z,nt2α)   Production of a neutron, a triton, and 2 al-
                            pha particles, plus a residual.
           37     (z,4n)     Production of 4 neutrons, plus a residual.
-          38     (n,3nf)    Fourth-chance ﬁssion cross section.
+          38     (n,3nf)    Fourth-chance fission cross section.
           39               Not allowed for Version 6.             Used only as an LR
                                                            ﬂag.
           40               Not allowed for Version 6.             Used only as an LR
@@ -161,16 +128,16 @@
                            Sum of MT=600-649, if they are present.  tons, this is in-
                                                            elastic scattering
                                                            (MT=600 is unde-
-                                                           ﬁned).
+                                                           fined).
           104    (z,d)      Production of a deuteron, plus a residual. For incident
                            Sum of MT=650-699, if they are present.  deuterons, this
                                                            is inelastic scatter-
                                                            ing (MT=650 is
-                                                           undeﬁned).
+                                                           undefined).
           105    (z,t)      Production of a triton, plus a residual. For incident tritons,
                            Sum of MT=700-749, if they are present.  this is inelastic scat-
                                                            tering (MT=700 is
-                                                           undeﬁned).
+                                                           undefined).
           106    (z, 3 He)    Production of a 3 He particle plus a resid-
                            ual. Sum of MT=750-799, if they are
                            present.
@@ -210,12 +177,12 @@
                            calculate cross sections at diﬀerent temper- only.
                            atures in the resolved and unresolved en-
                            ergy regions.
-          152    (z,5n)     Production of ﬁve neutrons plus a residual Additional open
+          152    (z,5n)     Production of five neutrons plus a residual Additional open
                                                            channels for inci-
                                                            dent energies up to
                                                            60 Mev. Indicates
                                                            the production of
-                                                           the deﬁned particles
+                                                           the defined particles
                                                            and a residual
           153    (z,6n)     Production of six neutron, plus a residual
           154    (z,2nt)    Production of two neutrons, a triton, plus
@@ -238,7 +205,7 @@
           MT             Description                      Comments
           161    (z,8n)     Production of eight neutrons plus a resid-
                            ual
-          162    (z,5np)    Production of ﬁve neutrons, a proton, plus
+          162    (z,5np)    Production of five neutrons, a proton, plus
                            a residual
           163    (z,6np)    Production of six neutrons, a proton, plus
                            a residual
@@ -246,7 +213,7 @@
                            plus a residual
           165    (z,4nα)    Production of four neutrons, an alpha par-
                            ticle, plus a residual
-          166    (z,5nα)    Production of ﬁve neutrons, an alpha par-
+          166    (z,5nα)    Production of five neutrons, an alpha par-
                            ticle, plus a residual
           167    (z,6nα)    Production of six neutrons, an alpha par-
                            ticle, plus a residual
@@ -254,7 +221,7 @@
                            particle, plus a residual
           169    (z,4nd)    Production of four neutrons, a deuteron,
                            plus a residual
-          170    (z,5nd)    Production of ﬁve neutrons, a deuteron,
+          170    (z,5nd)    Production of five neutrons, a deuteron,
                            plus a residual
           171    (z,6nd)    Production of six neutrons, a deuteron,
                            plus a residual
@@ -262,7 +229,7 @@
                            a residual
           173    (z,4nt)    Production of four neutrons, a triton, plus
                            a residual
-          174    (z,5nt)    Production of ﬁve neutrons, a triton, plus
+          174    (z,5nt)    Production of five neutrons, a triton, plus
                            a residual
           175    (z,6nt)    Production of six neutrons, a triton, plus
                            a residual
@@ -318,26 +285,26 @@
                            plus a residual
           199    (z,3n2pα)  Production of three neutrons, two protons,
                            an alpha particle, plus a residual
-          200    (z,5n2p)   Production of ﬁve neutrons, two protons,
+          200    (z,5n2p)   Production of five neutrons, two protons,
                            plus a residual
           201    (z,Xn)     Total neutron production.             Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
           202    (z,Xγ)     Total gamma production.             Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
           203    (z,Xp)     Total proton production.              Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
           204    (z,Xd)     Total deuteron production.            Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
 
                                          327         B.1. REACTION TYPE NUMBERS MT
 
           MT             Description                      Comments
           205    (z,Xt)     Total triton production.              Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
           206    (z,X 3 He)   Total 3 He production.                Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
           207    (z,Xα)    Total alpha particle production.         Redundant; use in
-                                                           derived ﬁles only.
+                                                           derived files only.
           208    (z,Xπ+ )   Totalπ+ production.                For use in high-
                                                            energy evaluations.
           209    (z,Xπ0 )    Totalπ0 production.                 For use in high-
@@ -359,17 +326,17 @@
           218    (z,Xn − )    Total anti-neutron production.         For use in high-
                                                            energy evaluations.
           219-250           (Unassigned)
-          251    (n,...)     µ, average cosine of the scattering angle Derived ﬁles only.
+          251    (n,...)     µ, average cosine of the scattering angle Derived files only.
                            (laboratory system) for elastic scattering
                            of neutrons.
-          252    (n,...)     ξ, average logarithmic energy decrement Derived ﬁles only.
+          252    (n,...)     ξ, average logarithmic energy decrement Derived files only.
                            for elastic scattering of neutrons.
-          253    (n,...)     γ, average of the square of the logarith- Derived ﬁles only.
+          253    (n,...)     γ, average of the square of the logarith- Derived files only.
                            mic energy decrement divided by twice the
                            average logarithmic energy decrement, for
                            elastic scattering of neutrons.
           254-300           (Unassigned)
-          301-450 (z,...)     Energy release parameters (eV-barns), for Derived ﬁles only.
+          301-450 (z,...)     Energy release parameters (eV-barns), for Derived files only.
                            total and partial cross sections; MT=
                            300 plus the reaction MT number, e.g.,
                            MT=302 is the elastic scattering kerma.
@@ -381,24 +348,24 @@
           451    (z,...)     Heading or title information; given in File 1
                            only.
           452    (z,...)     νT , average total (prompt plus delayed)
-                           number of neutrons released per ﬁssion
+                           number of neutrons released per fission
                            event.
           453              (Unassigned)
-          454    (z,...)     Independent ﬁssion product yield data.
+          454    (z,...)     Independent fission product yield data.
           455    (z,...)     νd , average number of delayed neutrons re-
-                           leased per ﬁssion event.
+                           leased per fission event.
           456    (z,...)     νp , average number of prompt neutrons re-
-                           leased per ﬁssion event.
+                           leased per fission event.
           457    (z,...)     Radioactive decay data.
-          458    (n,...)     Energy release in ﬁssion for incident neu-
+          458    (n,...)     Energy release in fission for incident neu-
                            trons.
-          459    (z,...)     Cumulative ﬁssion product yield data.
-          460    (z,...)     Delayed ﬁssion photons.
+          459    (z,...)     Cumulative fission product yield data.
+          460    (z,...)     Delayed fission photons.
           461-464           (Unassigned)
           465-466           Not allowed in Version 6.             Version 5: delayed
                                                            and prompt neu-
                                                            trons from sponta-
-                                                           neous ﬁssion.
+                                                           neous fission.
           467-499           (Unassigned)
           500              Total charged-particle stopping power.
           501              Total photo- or electro-atomic interaction.
@@ -408,9 +375,9 @@
           505              Imaginary scattering factor.
           506              Real scattering factor.
           507-514           (Unassigned)
-          515              Pair production, electron ﬁeld.
+          515              Pair production, electron field.
           516              Pair production; sum of MT=515, 517.   Redundant.
-          517              Pair production, nuclear ﬁeld.
+          517              Pair production, nuclear field.
           518              Not allowed in Version 6.
           519-521           (Unassigned)
           522              Ionization (sum of all subshells)         Version 5:
@@ -593,9 +560,9 @@
          B.2 Residual Breakup Flags LR
 
          Many reactions are sequential in nature. That is, a particle or gamma ray may be emitted
-         ﬁrst, then the residual nucleus decays by one or more paths. Most often, the ﬁrst stage of
-         the reaction proceeds through a well-deﬁned discrete state of the residual nucleus and the
-         angular dependence of the ﬁrst emitted particle must be uniquely described. A simple, two-
+         first, then the residual nucleus decays by one or more paths. Most often, the first stage of
+         the reaction proceeds through a well-defined discrete state of the residual nucleus and the
+         angular dependence of the first emitted particle must be uniquely described. A simple, two-
          body reaction is one in which the incident particle is inelastically scattered from the target
          nucleus leaving the target in an excited state, which immediately decays by gamma emission.
          Other excited states of the same target may, however, decay byparticle emission, electron-
