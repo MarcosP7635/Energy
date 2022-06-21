@@ -1,0 +1,10 @@
+Energy	SCS	Label	mass	Ref		
+MeV/u	MeV/(mg/cm2)		a.u.			
+23.2	33.3	A	100	Ga90	Gauvin, Nucl.Instrum. Methods Phys.Res. B47,339 (1990)	
+22.8	31.3	A				
+21.3	33.9	A				
+0.699	66.8	B	105	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.798	69.6	B				
+0.898	71	B				
+0.998	71.5	B				
+1.07	71.8	B				

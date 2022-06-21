@@ -1,0 +1,7 @@
+0.46192	26.1	A	Kny06	Knyazheva et al, Nucl.Instrum.Methods B248, 7 (2006)	doi:10.1016/j.nimb.2006.04.071
+0.50846	27.8	A			
+0.5402	29.7	A			
+0.41357	24.9	B	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.46357	26.6	B			
+0.51286	28.4	B			
+0.57	29	B			

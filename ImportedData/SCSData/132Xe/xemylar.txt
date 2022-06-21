@@ -1,0 +1,10 @@
+EMeV/u	SCS data	Label		mass	Ref	
+4.80	94.0	A	Bi80			
+4.26	91.0	A	Bi80			
+4.99	94.0	B	Bi80			
+0.434	67.3	C	Mat21	138	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.470	71.2	C				
+0.507	73.6	C				
+0.474	70.6	D	Mat21	137	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.510	72.8	D				
+0.547	74.9	D				

@@ -1,0 +1,14 @@
+Energy	EMeV	SCS	Label	error	mass	Ref		
+MeV/u		MeV/(mg/cm2)			a.u.			
+0.441	62.6	65	A	6.0	141.8	Kny06	Knyazheva et al, Nucl.Instrum.Methods B248, 7 (2006)	doi:10.1016/j.nimb.2006.04.071
+0.477	67.7	68.2	A	6.0			--	--
+0.520	73.7	70.5	A	6.0			--	--
+0.392	54.9	65.1	B	1.4	140	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.464	64.9	71.7	B	1.0				
+0.499	69.9	74.4	B	1.2				
+0.535	74.9	77.8	B	1.4				
+0.416	59.9	68.7	C	2.6	144	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.451	64.9	73.8	C	2.2				
+0.425	59.9	68.3	D	2.0	141	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.460	64.9	70.9	D	2.0				
+0.496	69.9	73.7	D	2.0				

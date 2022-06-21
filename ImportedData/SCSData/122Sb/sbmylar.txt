@@ -1,0 +1,8 @@
+Energy	En	data	label	mass	ref		
+MeV/amu	MeV	MeV/(mg/cm2)		au			
+0.499	64.9	68.4	A	131	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.538	69.9	71.2	A				
+0.576	74.9	73.5	A				
+0.495	64.9	72.5	B	130	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.534	69.9	72.2	B				
+0.572	74.9	73.6	B				

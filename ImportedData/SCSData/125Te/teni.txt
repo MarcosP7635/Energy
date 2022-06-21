@@ -1,0 +1,6 @@
+Energy	SCS	label	ref		
+MeV/u	MeV/(mg/cm2)				
+0.414	24.1	A	Mat21	Materna et al, Nucl.Instrum.Methods B505, 1 (2021)	doi:10.1016/j.nimb.2021.08.003
+0.463	26.3	A			
+0.513	27.9	A			
+0.570	29.4	A			
