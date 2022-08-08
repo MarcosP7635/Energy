@@ -1,22 +1,10 @@
 B.1 Reaction Type Numbers MT
-MT Description Comments
-1 (n,total) Neutron total cross sections. (See sum
-rules for cross sections in Section 0.4.3.11
-Table 14).
-Redundant. Un-
-defined for incident
-charged particles.
+MT Description Comments.
 2 (z,z0) Elastic scattering cross section for incident
 particles.
 321
 B.1. REACTION TYPE NUMBERS MT
 MT Description Comments
-3 (z,nonelas.) Nonelastic neutron cross section. (See sum
-rules for cross sections in Section 0.4.3.11
-Table 14).
-Redundant. For
-photon production
-only.
 4 (z,n) Production of one neutron in the exit chan-
 nel. Sum of MT=50-91.
 Redundant. For in-
