@@ -88,17 +88,15 @@ first,second
 24,"Production of two neutrons and an alpha particle, plus a residual1."
 17,Production of three neutrons and a resid- ual.
 37,"Production of 4 neutrons, plus a residual."
-1,Neutron total cross sections. (See sum rules for cross sections in Section 0.4.3.11 Table 14).
 252,"ξ, average logarithmic energy decrement for elastic scattering of neutrons."
-22,"Production of a neutron and an alpha par- ticle, plus a residual."
 454,Independent fission product yield data.
+22,"Production of a neutron and an alpha par- ticle, plus a residual."
 206,Total 3He production. Redundant; use in derived files only.
 601,"Production of a proton, with residual in the 1st excited state."
 604,"Production of a proton, with residual in the 4th excited state."
 214,Total κ0 long production. For use in high- energy evaluations.
-3,Nonelastic neutron cross section. (See sum rules for cross sections in Section 0.4.3.11 Table 14).
-459,Cumulative fission product yield data.
 800,Production of an alpha particle leaving the residual nucleus in the ground state.
+459,Cumulative fission product yield data.
 51,"Production of a neutron, with residual in the 1st excited state."
 33,"Production of a neutron and a triton, plus a residual."
 602,"Production of a proton, with residual in the 2nd excited state."
