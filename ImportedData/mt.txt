@@ -24,14 +24,6 @@ cident neutrons, this
 is inelastic scatter-
 ing (MT=50 is un-
 defined).
-5 (z,anything) Sum of all reactions not given explicitly in
-another MT number. This is a partial re-
-action to be added to obtain MT=1.
-Each particle can
-be identified and its
-multiplicity given in
-File 6. Not allowed
-in Files 4, 5.
 6-9 Not allowed in Version 6. 9Be(n,2n) in format
 Version 5.
 10 (z,contin.) Total continuum reaction; includes all con-
@@ -48,8 +40,6 @@ ual1. Sum of MT=875-891, if they are
 present.
 17 (z,3n) Production of three neutrons and a resid-
 ual.
-18 (z,fission) Particle-induced fission (sum of MT 19, 20,
-21 and 38, if present).
 19 (n,f) First-chance neutron-induced fission 2.
 20 (n,nf) Second-chance neutron-induced fission2.
 21 (n,2nf) Third-chance neutron-induced fission2.
@@ -131,9 +121,6 @@ the 40th excited state.
 not included in the above discrete repre-
 sentation.
 92-100 (Unassigned)
-101 (n,disap) Neutron disappearance; equal to sum of
-MT=102-117, 155, 182, 191-193, 197.
-Rarely used.
 102 (z,γ) Radiative capture.
 103 (z,p) Production of a proton, plus a residual.
 Sum of MT=600-649, if they are present.
