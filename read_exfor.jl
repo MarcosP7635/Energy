@@ -183,6 +183,8 @@ df = read_exfor_file(file_path, [1, 2, 102])
 fig = PlotlyJS.plot(df, x=:Energy, y=:Data, color=:MT, text=:ReferYY,
                 mode="markers", Layout(yaxis_type="log", xaxis_type="log"))
 
+fig.show()
+
 """Why are these extra MTs here? """
 
 function upload_plot(fig, plot_name)
