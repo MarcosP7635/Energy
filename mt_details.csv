@@ -1,0 +1,104 @@
+first,second
+875,Production of 2 neutrons with residual in the ground state.
+35,"Production of a neutron, a deuteron, and 2 alpha particles, plus a residual."
+114,"Production of a deuteron and 2 alpha par- ticles, plus a residual."
+30,"Production of two neutrons and two alpha particles, plus a residual."
+700,Production of a triton leaving the residual nucleus in the ground state.
+699,Production of a deuteron in the continuum not included in the above discrete represen- tation.
+32,"Production of a neutron and a deuteron, plus a residual."
+650,Production of a deuteron leaving the resid- ual nucleus in the ground state.
+117,"Production of deuteron and an alpha par- ticle, plus a residual."
+45,"Production of a neutron, a proton, and an alpha particle, plus a residual."
+215,Total κ0 short production. For use in high- energy evaluations.
+251,"μ, average cosine of the scattering angle (laboratory system) for elastic scattering of neutrons."
+253,"y, average of the square of the logarith- mic energy decrement divided by twice the average logarithmic energy decrement, for elastic scattering of neutrons."
+115,"Production of proton and a deuteron, plus a residual."
+112,"Production a proton and an alpha particle, plus a residual."
+210,Total π− production. For use in high- energy evaluations.
+151,Resonance parameters that can be used to calculate cross sections at different temper- atures in the resolved and unresolved en- ergy regions.
+90,"Production of a neutron, with residual in the 40th excited state."
+457,Radioactive decay data.
+460,Delayed fission photons.
+4,Production of one neutron in the exit chan- nel. Sum of MT=50-91.
+207,Total alpha particle production. Redundant; use in derived files only.
+104,"Production of a deuteron, plus a residual."
+91,Production of a neutron in the continuum not included in the above discrete repre- sentation.
+205,Total triton production. Redundant; use in derived files only.
+603,"Production of a proton, with residual in the 3rd excited state."
+651,"Production of a deuteron, with the residual in the 1st excited state."
+218,Total anti-neutron production. For use in high- energy evaluations.
+456,"νp, average number of prompt neutrons re- leased per fission event."
+52,"Production of a neutron, with residual in the 2nd excited state."
+28,"Production of a neutron and a proton, plus a residual."
+23,"Production of a neutron and three alpha particles, plus a residual1."
+111,"Production of 2 protons, plus a residual."
+41,"Production of 2 neutrons and a proton, plus a residual."
+11,"Production of two neutrons and a deuteron, plus a residual 1."
+36,"Production of a neutron, a triton, and 2 al- pha particles, plus a residual."
+451,Heading or title information; given in File 1 only.
+204,Total deuteron production. Redundant; use in derived files only.
+751,"Production of a 3He, with residual in the 1st excited state."
+801,"Production of an alpha particle, with resid- ual in the 1st excited state."
+849,Production of an alpha particle in the con- tinuum not included in the above discrete representation.
+216,Total κ− production. For use in high- energy evaluations.
+25,"Production of three neutrons and an alpha particle, plus a residual1."
+203,Total proton production. Redundant; use in derived files only.
+750,Production of a 3He particle leaving the residual nucleus in the ground state.
+108,"Production of 2 alpha particles, plus a residual."
+103,"Production of a proton, plus a residual."
+702,"Production of a triton, with residual in the 2nd excited state."
+34,"Production of a neutron and a 3He particle, plus a residual."
+50,"Production of a neutron, leaving the resid- ual nucleus in the ground state."
+208,Total π+ production. For use in high- energy evaluations.
+2,Elastic scattering cross section for incident particles.
+10,Total continuum reaction; includes all con- tinuum reactions and excludes all discrete reactions.
+27,"Absorption; sum of MT=18, 102-117, 155, 182, 191-193, 197 Rarely used."
+211,Total μ+ production. For use in high- energy evaluations.
+42,"Production of 3 neutrons and a proton, plus a residual."
+116,"Production of proton and a triton, plus a residual."
+202,Total gamma production. Redundant; use in derived files only.
+458,Energy release in fission for incident neu- trons.
+799,Production of a 3He in the continuum not included in the above discrete representa- tion.
+16,"Production of two neutrons and a resid- ual1. Sum of MT=875-891, if they are present."
+20,Second-chance neutron-induced fission2.
+652,"Production of a deuteron, with the residual in the 2nd excited state."
+455,"νd, average number of delayed neutrons re- leased per fission event."
+19,First-chance neutron-induced fission 2.
+213,Total κ+ production. For use in high- energy evaluations.
+450,"Energy release parameters (eV-barns), for total and partial cross sections; MT= 300 plus the reaction MT number, e.g., MT=302 is the elastic scattering kerma."
+44,"Production of a neutron and 2 protons, plus a residual."
+217,Total anti-proton production. For use in high- energy evaluations.
+749,Production of a triton in the continuum not included in the above discrete repre- sentation.
+106,"Production of a 3He particle plus a resid- ual. Sum of MT=750-799, if they are present."
+109,"Production of 3 alpha particles, plus a residual."
+452,"νT , average total (prompt plus delayed) number of neutrons released per fission event."
+29,"Production of a neutron and two alpha par- ticles, plus a residual."
+891,Production of 2 neutrons in the continuum not included in the above discrete repre- sentation.
+876,Production of 2 neutrons with residual in the 1st excited state.
+107,"Production of an alpha particle, plus a residual. Sum of MT=800-849, if they are present."
+212,Total μ− production. For use in high- energy evaluations.
+600,Production of a proton leaving the residual nucleus in the ground state.
+102,Radiative capture.
+152,"Production of five neutrons plus a residual Additional open channels for inci- dent energies up to 60 Mev. Indicates the production of the defined particles and a residual 153 (z,6n) Production of six neutron, plus a residual 154 (z,2nt) Production of two neutrons, a triton, plus a residual 155 (z,tα) Production of a triton, an alpha particle, plus a residual 156 (z,4np) Production of four neutrons, a proton, plus a residual 157 (z,3nd) Production of three neutrons, a deuteron, plus a residual 158 (z,n’dα) Production of a neutron, deuteron, an al- pha particle, plus a residual 159 (z,2npα) Production of two neutrons, a proton, an alpha particle, plus a residual 160 (z,7n) Production of seven neutrons plus a resid- ual 325 B.1. REACTION TYPE NUMBERS MT MT Description Comments 161 (z,8n) Production of eight neutrons plus a resid- ual 162 (z,5np) Production of five neutrons, a proton, plus a residual 163 (z,6np) Production of six neutrons, a proton, plus a residual 164 (z,7np) Production of seven neutrons, a proton, plus a residual 165 (z,4nα) Production of four neutrons, an alpha par- ticle, plus a residual 166 (z,5nα) Production of five neutrons, an alpha par- ticle, plus a residual 167 (z,6nα) Production of six neutrons, an alpha par- ticle, plus a residual 168 (z,7nα) Production of seven enutrons, an alpha particle, plus a residual 169 (z,4nd) Production of four neutrons, a deuteron, plus a residual 170 (z,5nd) Production of five neutrons, a deuteron, plus a residual 171 (z,6nd) Production of six neutrons, a deuteron, plus a residual 172 (z,3nt) Production of three neutrons, a triton, plus a residual 173 (z,4nt) Production of four neutrons, a triton, plus a residual 174 (z,5nt) Production of five neutrons, a triton, plus a residual 175 (z,6nt) Production of six neutrons, a triton, plus a residual 176 (z,2n3He) Production of two neutrons, a helion, plus a residual 177 (z,3n3He) Production of three neutrons, a helion, plus a residual 178 (z,4n3He) Production of four neutrons, a helion, plus a residual 179 (z,3n2p) Production of three neutrons, a proton, plus a residual 180 (z,3n2α) Production of three neutrons, two alpha particles, plus a residual 181 (z,3npα) Production of three neutrons, a proton, an alpha particle, plus a residual 182 (z,dt) Production of a deuteron, a triton, plus a residual 326 B.1. REACTION TYPE NUMBERS MT MT Description Comments 183 (z,n’pd) Production of a neutron, a proton, a deuteron, plus a residual 184 (z,n’pt) Production of a neutron, a proton, a triton, plus a residual 185 (z,n’dt) Production of a neutron, a deuteron, a tri- ton, plus a residual 186 (z,n’p3He) Production of a neutron,a proton, a helion, plus a residual 187 (z,n’d3He) Production of a neutron, a deuteron, a he- lion, plus a residual 188 (z,n’t3He) Production of a neutron, a triton, a helion, plus a residual 189 (z,n’tα) Production of a neutron, a triton, an alpha particle, plus a residual 190 (z,2n2p) Production of two neutrons, two protons, plus a residual 191 (z,p3He) Production of a proton, a helion, plus a residual 192 (z,d3He) Production of a deuteron, a helion, plus a residual 193 (z,3Heα) Production of a helion, an alpha particle, plus a residual 194 (z,4n2p) Production of four neutrons, two protons, plus a residual 195 (z,4n2α) Production of four neutrons, two alpha particles, plus a residual 196 (z,4npα) Production of four neutrons, a proton, an alpha particle, plus a residual 197 (z,3p) Production of three protons, plus a resid- ual 198 (z,n’3p) Production of a neutron, three protons, plus a residual 199 (z,3n2pα) Production of three neutrons, two protons, an alpha particle, plus a residual 200 (z,5n2p) Production of five neutrons, two protons, plus a residual 201 (z,Xn) Total neutron production. Redundant; use in derived files only."
+21,Third-chance neutron-induced fission2.
+38,Fourth-chance fission cross section.
+209,Total π0 production. For use in high- energy evaluations.
+649,Production of a proton in the continuum not included in the above discrete repre- sentation.
+105,"Production of a triton, plus a residual."
+24,"Production of two neutrons and an alpha particle, plus a residual1."
+17,Production of three neutrons and a resid- ual.
+37,"Production of 4 neutrons, plus a residual."
+252,"ξ, average logarithmic energy decrement for elastic scattering of neutrons."
+454,Independent fission product yield data.
+22,"Production of a neutron and an alpha par- ticle, plus a residual."
+206,Total 3He production. Redundant; use in derived files only.
+601,"Production of a proton, with residual in the 1st excited state."
+604,"Production of a proton, with residual in the 4th excited state."
+214,Total κ0 long production. For use in high- energy evaluations.
+800,Production of an alpha particle leaving the residual nucleus in the ground state.
+459,Cumulative fission product yield data.
+51,"Production of a neutron, with residual in the 1st excited state."
+33,"Production of a neutron and a triton, plus a residual."
+602,"Production of a proton, with residual in the 2nd excited state."
+701,"Production of a triton, with residual in the 1st excited state."
+113,"Production of a triton and 2 alpha parti- cles, plus a residual."
