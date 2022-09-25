@@ -1,4 +1,9 @@
-function  read_tendl_file(file_path)
+function read_rational_num(input_str)
+    coeff, oom = split(input_str, "E")
+    return parse(Float64, coeff) * Rational(10)^parse(Float64, oom)
+end
+
+function read_tendl_file(file_path)
     file_as_vector = readlines(file_path)
     reaction = split(file_as_vector[1], " ", keepempty = false)[end]
     authors = split(file_as_vector[2], " ", keepempty = false)[3]
@@ -18,6 +23,8 @@ function tendl_data_from_url(elem, mass, projectile, mt)
     elem_1 = uppercase(elem[1])
     if (length(elem) > 1)
         elem = elem_1 * elem[2]
+    else 
+        elem = elem_1
     end
     url = "https://www-nds.iaea.org/dataexplorer/libraries/" * projectile * "/" 
     url = url * elem * zero_filled_mass * "/tendl.2019/tables/xs/" * projectile * "-"
