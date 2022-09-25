@@ -13,11 +13,16 @@ function  read_tendl_file(file_path)
     return x_vals, y_vals, x_axis_label, y_axis_label, authors, reaction
 end
 
-function make_tendl_url(elem, mass, projectile, mt)
-  zero_filled_mass = lpad(String(mass), "0", 3)
-  elem = upper(elem[1]) + elem[2:end]
-  url = "https://www-nds.iaea.org/dataexplorer/libraries/" * projectile * "/" 
-  url = url * elem * zero_filled_mass * "/tendl.2019/tables/xs/" * projectile * "-"
-  url = url * zero_filled_mass * "-MT" * lpad(String(mt), "0", 3) * ".tendl.2019"
-  return url
+function tendl_data_from_url(elem, mass, projectile, mt)
+    zero_filled_mass = lpad(string(mass), 3, "0")
+    elem_1 = uppercase(elem[1])
+    if (length(elem) > 1)
+        elem = elem_1 * elem[2]
+    end
+    url = "https://www-nds.iaea.org/dataexplorer/libraries/" * projectile * "/" 
+    url = url * elem * zero_filled_mass * "/tendl.2019/tables/xs/" * projectile * "-"
+    url = url * elem * zero_filled_mass * "-MT" * lpad(string(mt), 3, "0") * ".tendl.2019"
+    return read_tendl_file(Downloads.download(url))
 end
+
+#tendl_data_from_url("Li", 6, "n", 2)
