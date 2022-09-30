@@ -1,0 +1,4 @@
+decay_routes
+"75Ni,B-,100%,3827.0keV,0.344seconds,75Cu,B-,100%,2688.0keV,1.224seconds,75Zn,B-,100%,1893.42keV,10.2seconds,75Ga,B-,100%,0.0keV,126seconds,75Ge,B-,100%,420.59keV,4966.8seconds,75As,stable"
+"75Ni,B-N,10%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"75Ni,B-,100%,3827.0keV,0.344seconds,75Cu,B-N,3.5%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

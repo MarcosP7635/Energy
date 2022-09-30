@@ -1,0 +1,5 @@
+decay_routes
+"68Cr,B-,100%,4391.0keV,0.00000036seconds,68Mn,B-,100%,5072.0keV,0.028seconds,68Fe,B-,100%,2729.0keV,0.188seconds,68Co,B-,100%,3796.31keV,0.2seconds,68Ni,B-,100%,663.7keV,29seconds,68Cu,B-,100%,1417.96keV,30.9seconds,68Zn,stable"
+"68Cr,B-N,0%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"68Cr,B-,100%,4391.0keV,0.00000036seconds,68Mn,B-N,0%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"68Cr,B-,100%,4391.0keV,0.00000036seconds,68Mn,B-,100%,5072.0keV,0.028seconds,68Fe,B-N,0%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

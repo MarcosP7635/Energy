@@ -1,0 +1,9 @@
+decay_routes
+"161Re,P,100%,0.0keV,P not accounted for ,160W,A,87%,5143.44keV,0.091seconds,156Hf,A,100%,5873.0keV,0.023seconds,152Yb,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"161Re,A,1.4%,0.0keV,0.00044seconds,157Ta,A,96.6%,5909.02keV,0.0101seconds,153Lu,EC+B+, %,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"161Re,P,100%,0.0keV,P not accounted for ,160W,EC+B+,13%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"161Re,A,1.4%,0.0keV,0.00044seconds,157Ta,P,3.4%,0.0keV,P not accounted for ,156Hf,A,100%,5873.0keV,0.023seconds,152Yb,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"161Re,A,1.4%,0.0keV,0.00044seconds,157Ta,A,96.6%,5909.02keV,0.0101seconds,153Lu,A, %,0.0keV,0.9seconds,149Tm,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"161Re,P,100%,0.0keV,P not accounted for ,160W,A,87%,5143.44keV,0.091seconds,156Hf,A,100%,5873.0keV,0.023seconds,152Yb,B+P, %,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"161Re,A,1.4%,0.0keV,0.00044seconds,157Ta,P,3.4%,0.0keV,P not accounted for ,156Hf,A,100%,5873.0keV,0.023seconds,152Yb,B+P, %,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"161Re,A,1.4%,0.0keV,0.00044seconds,157Ta,A,96.6%,5909.02keV,0.0101seconds,153Lu,A, %,0.0keV,0.9seconds,149Tm,ECP,0.2%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"

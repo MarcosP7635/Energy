@@ -1,0 +1,6 @@
+decay_routes
+"40Si,B-,100%,4513.33keV,0.033seconds,40P,B-,100%,4063.5keV,0.15seconds,40S,B-,100%,1251.18keV,8.8seconds,40Cl,B-,100%,1515.71keV,81seconds,40Ar,stable"
+"40Si,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"40Si,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"40Si,B-,100%,4513.33keV,0.033seconds,40P,B-N,15.8%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"40Si,B-,100%,4513.33keV,0.033seconds,40P,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"

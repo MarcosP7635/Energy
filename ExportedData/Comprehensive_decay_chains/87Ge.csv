@@ -1,0 +1,6 @@
+decay_routes
+"87Ge,B-,100%,3533.0keV,0.14seconds,87As,B-,100%,3440.0keV,0.484seconds,87Se,B-,100%,2079.0keV,5.5seconds,87Br,B-,100%,1170.0keV,55.68seconds,87Kr,B-,100%,1330.87keV,4578seconds,87Rb,B-,100%,81.7keV,1.5683792209372224e18seconds,87Sr,stable"
+"87Ge,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"87Ge,B-,100%,3533.0keV,0.14seconds,87As,B-N,15.4%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"87Ge,B-,100%,3533.0keV,0.14seconds,87As,B-,100%,3440.0keV,0.484seconds,87Se,B-N,0.36%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"87Ge,B-,100%,3533.0keV,0.14seconds,87As,B-,100%,3440.0keV,0.484seconds,87Se,B-,100%,2079.0keV,5.5seconds,87Br,B-N,2.6%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

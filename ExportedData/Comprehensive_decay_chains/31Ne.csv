@@ -1,0 +1,8 @@
+decay_routes
+"31Ne,B-,100%,6863.8keV,0.0034seconds,31Na,B-,100%,4298.38keV,0.01735seconds,31Mg,B-,100%,4122.91keV,0.236seconds,31Al,B-,100%,2664.67keV,0.644seconds,31Si,B-,100%,595.64keV,9441.6seconds,31P,stable"
+"31Ne,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"31Ne,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"31Ne,B-,100%,6863.8keV,0.0034seconds,31Na,B-N,37.3%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"31Ne,B-,100%,6863.8keV,0.0034seconds,31Na,B-2N,0.87%,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"31Ne,B-,100%,6863.8keV,0.0034seconds,31Na,B-,100%,4298.38keV,0.01735seconds,31Mg,B-N,6.2%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"31Ne,B-,100%,6863.8keV,0.0034seconds,31Na,B-,100%,4298.38keV,0.01735seconds,31Mg,B-,100%,4122.91keV,0.236seconds,31Al,B-N,1.6%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

@@ -1,0 +1,5 @@
+decay_routes
+"111Xe,A,8%,0.0keV,0.74seconds,107Te,A,70%,2696.56keV,0.0031seconds,103Sn,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"111Xe,EC+B+, %,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"111Xe,A,8%,0.0keV,0.74seconds,107Te,EC+B+,30%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"111Xe,A,8%,0.0keV,0.74seconds,107Te,A,70%,2696.56keV,0.0031seconds,103Sn,ECP,1.2%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"

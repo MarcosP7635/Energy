@@ -1,0 +1,5 @@
+decay_routes
+"186Bi,A,100%,8769.02keV,0.015seconds,182Tl,EC+B+,97.5%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"186Bi,A,100%,8769.02keV,0.015seconds,182Tl,A,5%,0.0keV,3.1seconds,178Au,EC+B+,60%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"186Bi,A,100%,8769.02keV,0.015seconds,182Tl,A,5%,0.0keV,3.1seconds,178Au,A,40%,414.87keV,2.6seconds,174Ir,EC,99.5%,EC not yet accounted for,7.9seconds,EC not yet accounted for"
+"186Bi,A,100%,8769.02keV,0.015seconds,182Tl,A,5%,0.0keV,3.1seconds,178Au,A,40%,414.87keV,2.6seconds,174Ir,A,0.5%,24.79keV,7.9seconds,170Re,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"

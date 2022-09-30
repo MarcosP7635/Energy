@@ -1,0 +1,6 @@
+decay_routes
+"260Lr,A,80%,6428.0keV,180seconds,256Md,EC,90.8%,EC not yet accounted for,4662seconds,EC not yet accounted for"
+"260Lr,EC,40%,EC not yet accounted for,180seconds,EC not yet accounted for"
+"260Lr,A,80%,6428.0keV,180seconds,256Md,A,9.2%,669.59keV,4662seconds,252Es,A,78%,5150.54keV,40754880seconds,248Bk,stable"
+"260Lr,A,80%,6428.0keV,180seconds,256Md,SF,3%,SF not yet accounted for,SF not accounted for ,SF not yet accounted for"
+"260Lr,A,80%,6428.0keV,180seconds,256Md,A,9.2%,669.59keV,4662seconds,252Es,EC,22%,EC not yet accounted for,40754880seconds,EC not yet accounted for"

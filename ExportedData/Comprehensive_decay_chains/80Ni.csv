@@ -1,0 +1,8 @@
+decay_routes
+"80Ni,B-,100%,5305.0keV,0.024seconds,80Cu,B-,100%,4327.0keV,0.1136seconds,80Zn,B-,100%,2590.0keV,0.5619seconds,80Ga,B-,100%,3122.0keV,1.9seconds,80Ge,B-,100%,1050.27keV,29.5seconds,80As,B-,100%,2147.7keV,15.2seconds,80Se,2B-, %,2B- not yet accounted for,2B- not accounted for ,2B- not yet accounted for"
+"80Ni,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"80Ni,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"80Ni,B-,100%,5305.0keV,0.024seconds,80Cu,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"80Ni,B-,100%,5305.0keV,0.024seconds,80Cu,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"80Ni,B-,100%,5305.0keV,0.024seconds,80Cu,B-,100%,4327.0keV,0.1136seconds,80Zn,B-N,1%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"80Ni,B-,100%,5305.0keV,0.024seconds,80Cu,B-,100%,4327.0keV,0.1136seconds,80Zn,B-,100%,2590.0keV,0.5619seconds,80Ga,B-N,0.86%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

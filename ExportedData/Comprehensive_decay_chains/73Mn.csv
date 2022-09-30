@@ -1,0 +1,10 @@
+decay_routes
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-,100%,4903.0keV,0.0129seconds,73Co,B-,100%,4718.0keV,0.0407seconds,73Ni,B-,100%,3281.0keV,0.84seconds,73Cu,B-,100%,1985.0keV,4.2seconds,73Zn,B-,100%,1742.62keV,24.5seconds,73Ga,B-,100%,443.29keV,17496seconds,73Ge,stable"
+"73Mn,B-3N, %,B-3N not yet accounted for,B-3N not accounted for ,B-3N not yet accounted for"
+"73Mn,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-,100%,4903.0keV,0.0129seconds,73Co,B-N,22%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-,100%,4903.0keV,0.0129seconds,73Co,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-,100%,4903.0keV,0.0129seconds,73Co,B-,100%,4718.0keV,0.0407seconds,73Ni,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"73Mn,B-,100%,6009.0keV, seconds,73Fe,B-,100%,4903.0keV,0.0129seconds,73Co,B-,100%,4718.0keV,0.0407seconds,73Ni,B-,100%,3281.0keV,0.84seconds,73Cu,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

@@ -1,0 +1,6 @@
+decay_routes
+"111Nb,B-,100%,3399.0keV,0.054seconds,111Mo,B-,100%,3098.0keV,0.186seconds,111Tc,B-,100%,2473.84keV,0.29seconds,111Ru,B-,100%,1855.76keV,2.12seconds,111Rh,B-,100%,1296.42keV,11seconds,111Pd,B-,100%,831.36keV,1404seconds,111Ag,B-,100%,350.27keV,643680seconds,111Cd,stable"
+"111Nb,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"111Nb,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"111Nb,B-,100%,3399.0keV,0.054seconds,111Mo,B-N,12%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"111Nb,B-,100%,3399.0keV,0.054seconds,111Mo,B-,100%,3098.0keV,0.186seconds,111Tc,B-N,0.85%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

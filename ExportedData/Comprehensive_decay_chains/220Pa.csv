@@ -1,0 +1,5 @@
+decay_routes
+"220Pa,A,100%,Energy not foundkeV,0.00000078seconds,216Ac,A,100%,9056.8keV,0.00044seconds,212Fr,EC+B+,57%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"220Pa,EC+B+,0.0000003%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"220Pa,A,100%,Energy not foundkeV,0.00000078seconds,216Ac,A,100%,9056.8keV,0.00044seconds,212Fr,A,43%,2767.07keV,1200seconds,208At,EC+B+,99.45%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"220Pa,A,100%,Energy not foundkeV,0.00000078seconds,216Ac,A,100%,9056.8keV,0.00044seconds,212Fr,A,43%,2767.07keV,1200seconds,208At,A,0.55%,30.99keV,5868seconds,204Bi,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"

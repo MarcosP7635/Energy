@@ -1,0 +1,11 @@
+decay_routes
+"37Na,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,N, %,467.59keV,N not accounted for ,36Mg,B-,100%,4810.0keV,0.0076seconds,36Al,B-,100%,6123.33keV,0.09seconds,36Si,B-,100%,2909.06keV,0.45seconds,36P,B-,100%,1872.46keV,5.6seconds,36S,stable"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,B-, %,7010.54keV,0.008seconds,37Al,B-,100%,2229.36keV,0.0107seconds,37Si,B-,100%,4143.33keV,0.09seconds,37P,B-,100%,2633.67keV,2.31seconds,37S,B-,100%,799.85keV,303seconds,37Cl,stable"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,N, %,467.59keV,N not accounted for ,36Mg,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,B-, %,7010.54keV,0.008seconds,37Al,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,N, %,467.59keV,N not accounted for ,36Mg,B-,100%,4810.0keV,0.0076seconds,36Al,B-N,31%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,B-, %,7010.54keV,0.008seconds,37Al,B-,100%,2229.36keV,0.0107seconds,37Si,B-N,17%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,B-, %,7010.54keV,0.008seconds,37Al,B-,100%,2229.36keV,0.0107seconds,37Si,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"37Na,B-, %,Energy not foundkeV,0.00000006seconds,37Mg,N, %,467.59keV,N not accounted for ,36Mg,B-,100%,4810.0keV,0.0076seconds,36Al,B-,100%,6123.33keV,0.09seconds,36Si,B-N,10%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

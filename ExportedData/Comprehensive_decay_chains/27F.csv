@@ -1,0 +1,5 @@
+decay_routes
+"27F,B-,100%,6479.11keV,0.005seconds,27Ne,B-,100%,7386.77keV,0.0315seconds,27Na,B-,100%,3697.44keV,0.301seconds,27Mg,B-,100%,702.03keV,567.48seconds,27Al,stable"
+"27F,B-N,77%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"27F,B-,100%,6479.11keV,0.005seconds,27Ne,B-N,2%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"27F,B-,100%,6479.11keV,0.005seconds,27Ne,B-,100%,7386.77keV,0.0315seconds,27Na,B-N,0.13%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

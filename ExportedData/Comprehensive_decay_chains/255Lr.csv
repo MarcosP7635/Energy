@@ -1,0 +1,5 @@
+decay_routes
+"255Lr,A,99.7%,8131.51keV,31.1seconds,251Md,EC+B+,90%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"255Lr,EC,0.3%,EC not yet accounted for,31.1seconds,EC not yet accounted for"
+"255Lr,SF,0.1%,SF not yet accounted for,SF not accounted for ,SF not yet accounted for"
+"255Lr,A,99.7%,8131.51keV,31.1seconds,251Md,A,10%,755.0keV,240seconds,247Es,stable"

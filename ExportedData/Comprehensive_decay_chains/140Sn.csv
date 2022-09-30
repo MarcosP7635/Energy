@@ -1,0 +1,8 @@
+decay_routes
+"140Sn,B-,100%,3088.05keV, seconds,140Sb,B-,100%,3263.0keV,0.173seconds,140Te,B-,100%,2331.71keV,0.348seconds,140I,B-,100%,2740.24keV,0.86seconds,140Xe,B-,100%,1088.47keV,13.6seconds,140Cs,B-,100%,1910.2keV,63.7seconds,140Ba,B-,100%,274.08keV,1101686.4seconds,140La,B-,100%,525.63keV,145029.312seconds,140Ce,stable"
+"140Sn,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"140Sn,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"140Sn,B-,100%,3088.05keV, seconds,140Sb,B-N,23%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"140Sn,B-,100%,3088.05keV, seconds,140Sb,B-2N,7.6%,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"140Sn,B-,100%,3088.05keV, seconds,140Sb,B-,100%,3263.0keV,0.173seconds,140Te,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"140Sn,B-,100%,3088.05keV, seconds,140Sb,B-,100%,3263.0keV,0.173seconds,140Te,B-,100%,2331.71keV,0.348seconds,140I,B-N,7.6%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

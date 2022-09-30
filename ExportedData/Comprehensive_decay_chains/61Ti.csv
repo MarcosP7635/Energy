@@ -1,0 +1,8 @@
+decay_routes
+"61Ti,B-,100%,5054.8keV,0.015seconds,61V,B-,100%,5531.62keV,0.0483seconds,61Cr,B-,100%,3814.78keV,0.234seconds,61Mn,B-,100%,2498.35keV,0.709seconds,61Fe,B-,100%,1140.76keV,358.8seconds,61Co,B-,100%,459.71keV,5936.4seconds,61Ni,stable"
+"61Ti,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"61Ti,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"61Ti,B-,100%,5054.8keV,0.015seconds,61V,B-N,10%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"61Ti,B-,100%,5054.8keV,0.015seconds,61V,B-2N, %,B-2N not yet accounted for,B-2N not accounted for ,B-2N not yet accounted for"
+"61Ti,B-,100%,5054.8keV,0.015seconds,61V,B-,100%,5531.62keV,0.0483seconds,61Cr,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"61Ti,B-,100%,5054.8keV,0.015seconds,61V,B-,100%,5531.62keV,0.0483seconds,61Cr,B-,100%,3814.78keV,0.234seconds,61Mn,B-N,0.2%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

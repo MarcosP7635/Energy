@@ -1,0 +1,4 @@
+decay_routes
+"229U,EC,80%,EC not yet accounted for,3480seconds,EC not yet accounted for"
+"229U,A,20%,1268.12keV,3480seconds,225Th,A,90%,5877.87keV,525seconds,221Ra,A,100%,6698.1keV,28seconds,217Rn,A,100%,7741.0keV,0.00054seconds,213Po,A,100%,nothingkeV,0.000003706seconds,209Pb,B-,100%,197.5keV,11642.4seconds,209Bi,A,100%,3075.69keV,6.342942120892992e26seconds,205Tl,stable"
+"229U,A,20%,1268.12keV,3480seconds,225Th,EC,10%,EC not yet accounted for,525seconds,EC not yet accounted for"

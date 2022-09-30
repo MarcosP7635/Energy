@@ -1,0 +1,12 @@
+decay_routes
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,EC,99%,EC not yet accounted for, seconds,EC not yet accounted for"
+"247Md,SF,0.1%,SF not yet accounted for,SF not accounted for ,SF not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,EC+B+,39%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,SF,1%,SF not yet accounted for,SF not accounted for ,SF not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,A,1%,0.0keV, seconds,235Am,EC,99.6%,EC not yet accounted for,618seconds,EC not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,SF,1%,SF not yet accounted for,SF not accounted for ,SF not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,A,1%,0.0keV, seconds,235Am,A,0.4%,0.0keV,618seconds,231Np,EC,98%,EC not yet accounted for,2928seconds,EC not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,A,1%,0.0keV, seconds,235Am,A,0.4%,0.0keV,618seconds,231Np,A,2%,0.0keV,2928seconds,227Pa,A,85%,5402.57keV,2298seconds,223Ac,A,99%,6600.54keV,126seconds,219Fr,A,100%,7307.05keV,0.024seconds,215At,A,100%,8025.79keV,0.0001seconds,211Bi,A,99.724%,6548.88keV,128.4seconds,207Tl,B-,100%,491.59keV,286.2seconds,207Pb,stable"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,A,1%,0.0keV, seconds,235Am,A,0.4%,0.0keV,618seconds,231Np,A,2%,0.0keV,2928seconds,227Pa,EC,15%,EC not yet accounted for,2298seconds,EC not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,A,1%,0.0keV, seconds,235Am,A,0.4%,0.0keV,618seconds,231Np,A,2%,0.0keV,2928seconds,227Pa,A,85%,5402.57keV,2298seconds,223Ac,EC,1%,EC not yet accounted for,126seconds,EC not yet accounted for"
+"247Md,A,99.9%,8407.32keV,1.2seconds,243Es,A,61%,4829.82keV,21seconds,239Bk,A,1%,0.0keV, seconds,235Am,A,0.4%,0.0keV,618seconds,231Np,A,2%,0.0keV,2928seconds,227Pa,A,85%,5402.57keV,2298seconds,223Ac,A,99%,6600.54keV,126seconds,219Fr,A,100%,7307.05keV,0.024seconds,215At,A,100%,8025.79keV,0.0001seconds,211Bi,B-,0.276%,47.72keV,128.4seconds,211Po,A,100%,7442.49keV,0.516seconds,207Pb,stable"

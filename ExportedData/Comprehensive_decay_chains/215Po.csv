@@ -1,0 +1,5 @@
+decay_routes
+"215Po,A,99.99977%,7390.67keV,0.001781seconds,211Pb,B-,100%,446.25keV,2166seconds,211Bi,A,99.724%,6548.88keV,128.4seconds,207Tl,B-,100%,491.59keV,286.2seconds,207Pb,stable"
+"215Po,B-,0.00023%,238.33keV,0.001781seconds,215At,A,100%,8025.79keV,0.0001seconds,211Bi,A,99.724%,6548.88keV,128.4seconds,207Tl,B-,100%,491.59keV,286.2seconds,207Pb,stable"
+"215Po,A,99.99977%,7390.67keV,0.001781seconds,211Pb,B-,100%,446.25keV,2166seconds,211Bi,B-,0.276%,47.72keV,128.4seconds,211Po,A,100%,7442.49keV,0.516seconds,207Pb,stable"
+"215Po,B-,0.00023%,238.33keV,0.001781seconds,215At,A,100%,8025.79keV,0.0001seconds,211Bi,B-,0.276%,47.72keV,128.4seconds,211Po,A,100%,7442.49keV,0.516seconds,207Pb,stable"

@@ -1,0 +1,11 @@
+decay_routes
+"185Bi,P,90%,0.0keV,P not accounted for ,184Pb,A,80%,0.0keV,0.49seconds,180Hg,EC+B+,52%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,A,10%,0.0keV,0.000058seconds,181Tl,A,10%,531.74keV,3.2seconds,177Au,EC+B+,60%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,P,90%,0.0keV,P not accounted for ,184Pb,EC+B+,20%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,P,90%,0.0keV,P not accounted for ,184Pb,A,80%,0.0keV,0.49seconds,180Hg,A,48%,2936.98keV,2.59seconds,176Pt,EC+B+,60%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,A,10%,0.0keV,0.000058seconds,181Tl,A,10%,531.74keV,3.2seconds,177Au,A,40%,0.0keV,1.501seconds,173Ir,EC+B+,93%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,P,90%,0.0keV,P not accounted for ,184Pb,A,80%,0.0keV,0.49seconds,180Hg,A,48%,2936.98keV,2.59seconds,176Pt,A,40%,2300.97keV,6.33seconds,172Os,EC+B+,99.8%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,A,10%,0.0keV,0.000058seconds,181Tl,A,10%,531.74keV,3.2seconds,177Au,A,40%,0.0keV,1.501seconds,173Ir,A,7%,216.72keV,9seconds,169Re,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,P,90%,0.0keV,P not accounted for ,184Pb,A,80%,0.0keV,0.49seconds,180Hg,A,48%,2936.98keV,2.59seconds,176Pt,A,40%,2300.97keV,6.33seconds,172Os,A,0.2%,0.0keV,19.2seconds,168W,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,A,10%,0.0keV,0.000058seconds,181Tl,A,10%,531.74keV,3.2seconds,177Au,A,40%,0.0keV,1.501seconds,173Ir,A,7%,216.72keV,9seconds,169Re,A,0.01%,0.0keV,8.1seconds,165Ta,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Bi,P,90%,0.0keV,P not accounted for ,184Pb,A,80%,0.0keV,0.49seconds,180Hg,A,48%,2936.98keV,2.59seconds,176Pt,A,40%,2300.97keV,6.33seconds,172Os,A,0.2%,0.0keV,19.2seconds,168W,A,0.0032%,0.138keV,50.9seconds,164Hf,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"

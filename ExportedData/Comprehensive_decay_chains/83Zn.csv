@@ -1,0 +1,5 @@
+decay_routes
+"83Zn,B-,100%,0.0keV,0.117seconds,83Ga,B-,100%,3881.0keV,0.3081seconds,83Ge,B-,100%,2689.0keV,1.85seconds,83As,B-,100%,0.0keV,13.4seconds,83Se,B-,100%,446.31keV,1338seconds,83Br,B-,100%,327.45keV,8546.4seconds,83Kr,stable"
+"83Zn,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"83Zn,B-,100%,0.0keV,0.117seconds,83Ga,B-N,62.8%,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"83Zn,B-,100%,0.0keV,0.117seconds,83Ga,B-,100%,3881.0keV,0.3081seconds,83Ge,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"

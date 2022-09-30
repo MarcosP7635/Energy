@@ -1,0 +1,5 @@
+decay_routes
+"153La,B-,100%,2595.0keV,0.245seconds,153Ce,B-,100%,1680.0keV,0.865seconds,153Pr,B-,100%,1700.0keV,4.29seconds,153Nd,B-,100%,1153.3keV,31.6seconds,153Pm,B-,100%,662.6keV,315seconds,153Sm,B-,100%,223.87keV,166622.4seconds,153Eu,stable"
+"153La,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"153La,B-,100%,2595.0keV,0.245seconds,153Ce,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
+"153La,B-,100%,2595.0keV,0.245seconds,153Ce,B-,100%,1680.0keV,0.865seconds,153Pr,B-N, %,B-N not yet accounted for,B-N not accounted for ,B-N not yet accounted for"
