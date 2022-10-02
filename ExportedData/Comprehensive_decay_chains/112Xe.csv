@@ -1,5 +1,7 @@
 decay_routes
-"112Xe,EC+B+,98.8%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"112Xe,A,1.2%,25.69keV,2.7seconds,108Te,EC+B+,51%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"112Xe,A,1.2%,25.69keV,2.7seconds,108Te,A,49%,1625.82keV,2.1seconds,104Sn,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"112Xe,EC+B+,98.8%,0.0keV,2.7seconds,112I,EC+B+,100%,0.0keV,3.34seconds,112Te,EC+B+,100%,0.0keV,120seconds,112Sb,EC+B+,100%,1743.39keV,53.5seconds,112Sn,stable"
+"112Xe,A,1.2%,25.69keV,2.7seconds,108Te,EC+B+,51%,0.0keV,2.1seconds,108Sb,EC+B+,100%,0.0keV,7.4seconds,108Sn,EC+B+,100%,1.61keV,618seconds,108In,EC+B+,100%,147.25keV,3480seconds,108Cd,stable"
+"112Xe,EC+B+,98.8%,0.0keV,2.7seconds,112I,ECP,0.88%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"112Xe,EC+B+,98.8%,0.0keV,2.7seconds,112I,ECA,0.104%,ECA not yet accounted for,ECA not accounted for ,ECA not yet accounted for"
+"112Xe,A,1.2%,25.69keV,2.7seconds,108Te,A,49%,1625.82keV,2.1seconds,104Sn,EC+B+,100%,629.22keV,20.8seconds,104In,EC+B+,100%,496.84keV,108seconds,104Cd,EC+B+,100%,0.0keV,3462seconds,104Ag,EC+B+,100%,76.9keV,4152seconds,104Pd,stable"
 "112Xe,A,1.2%,25.69keV,2.7seconds,108Te,B+P,2.4%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"

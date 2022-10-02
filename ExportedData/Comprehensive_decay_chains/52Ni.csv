@@ -1,3 +1,4 @@
 decay_routes
-"52Ni,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"52Ni,EC+B+,100%,0.0keV,0.0408seconds,52Co,EC+B+,100%,0.0keV,0.104seconds,52Fe,EC+B+,100%,188.67keV,29790seconds,52Mn,EC+B+,100%,71.03keV,483062.4seconds,52Cr,stable"
 "52Ni,B+P,31.4%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"52Ni,EC+B+,100%,0.0keV,0.0408seconds,52Co,B+P, %,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"

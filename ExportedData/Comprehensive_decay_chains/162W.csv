@@ -1,5 +1,5 @@
 decay_routes
-"162W,EC+B+,54.8%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"162W,A,45.2%,2502.27keV,1.19seconds,158Hf,EC+B+,55.7%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"162W,A,45.2%,2502.27keV,1.19seconds,158Hf,A,44.3%,2333.72keV,2.85seconds,154Yb,A,92.6%,4936.41keV,0.409seconds,150Er,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"162W,A,45.2%,2502.27keV,1.19seconds,158Hf,A,44.3%,2333.72keV,2.85seconds,154Yb,EC+B+,7.4%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"162W,EC+B+,54.8%,0.0keV,1.19seconds,EC+B+ not yet accounted for"
+"162W,A,45.2%,2502.27keV,1.19seconds,158Hf,EC+B+,55.7%,0.0keV,2.85seconds,EC+B+ not yet accounted for"
+"162W,A,45.2%,2502.27keV,1.19seconds,158Hf,A,44.3%,2333.72keV,2.85seconds,154Yb,A,92.6%,4936.41keV,0.409seconds,150Er,EC+B+,100%,470.58keV,18.5seconds,EC+B+ not yet accounted for"
+"162W,A,45.2%,2502.27keV,1.19seconds,158Hf,A,44.3%,2333.72keV,2.85seconds,154Yb,EC+B+,7.4%,0.0keV,0.409seconds,EC+B+ not yet accounted for"

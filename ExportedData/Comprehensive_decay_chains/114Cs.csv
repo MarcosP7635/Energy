@@ -1,4 +1,5 @@
 decay_routes
-"114Cs,EC+B+,99.982%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"114Cs,EC+B+,99.982%,0.0keV,0.57seconds,114Xe,EC+B+,100%,0.0keV,10seconds,114I,EC+B+,100%,0.0keV,2.1seconds,114Te,EC+B+,100%,131.79keV,912seconds,114Sb,EC+B+,100%,1251.43keV,209.4seconds,114Sn,stable"
 "114Cs,ECP,8.7%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
 "114Cs,ECA,0.19%,ECA not yet accounted for,ECA not accounted for ,ECA not yet accounted for"
+"114Cs,EC+B+,99.982%,0.0keV,0.57seconds,114Xe,EC+B+,100%,0.0keV,10seconds,114I,B+P, %,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"

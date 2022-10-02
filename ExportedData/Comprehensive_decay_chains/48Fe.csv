@@ -1,3 +1,5 @@
 decay_routes
-"48Fe,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"48Fe,EC+B+,100%,119.27keV,0.0455seconds,48Mn,EC+B+,100%,3114.73keV,0.1577seconds,48Cr,EC+B+,100%,1.55keV,77616seconds,48V,EC+B+,100%,289.87keV,1380153.6seconds,48Ti,stable"
 "48Fe,ECP,15.3%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"48Fe,EC+B+,100%,119.27keV,0.0455seconds,48Mn,B+P,0.28%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"48Fe,EC+B+,100%,119.27keV,0.0455seconds,48Mn,B+A,0.0006%,B+A not yet accounted for,B+A not accounted for ,B+A not yet accounted for"

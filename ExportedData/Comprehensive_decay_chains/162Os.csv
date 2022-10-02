@@ -1,3 +1,3 @@
 decay_routes
-"162Os,A,99%,6602.0keV,0.0021seconds,158W,A,100%,6445.0keV,0.00125seconds,154Hf,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"162Os,A,99%,6602.0keV,0.0021seconds,158W,A,100%,6445.0keV,0.00125seconds,154Hf,EC+B+,100%,0.0keV,2seconds,154Lu,stable"
 "162Os,A,99%,6602.0keV,0.0021seconds,158W,A,100%,6445.0keV,0.00125seconds,154Hf,A,0%,0.0keV,2seconds,150Yb,stable"

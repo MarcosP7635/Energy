@@ -1,3 +1,5 @@
 decay_routes
-"135Gd,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"135Gd,EC+B+,100%,0.0keV,1.1seconds,135Eu,EC+B+,100%,0.0keV,1.5seconds,135Sm,EC+B+,100%,0.0keV,10.3seconds,135Pm,EC+B+,100%,0.0keV,49seconds,135Nd,EC+B+,100%,906.92keV,744seconds,135Pr,EC+B+,100%,0.0keV,1440seconds,135Ce,EC+B+,100%,1.21keV,63720seconds,135La,EC+B+,100%,0.0063keV,70200seconds,135Ba,stable"
 "135Gd,ECP,2%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"135Gd,EC+B+,100%,0.0keV,1.1seconds,135Eu,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"135Gd,EC+B+,100%,0.0keV,1.1seconds,135Eu,EC+B+,100%,0.0keV,1.5seconds,135Sm,ECP,0.02%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"

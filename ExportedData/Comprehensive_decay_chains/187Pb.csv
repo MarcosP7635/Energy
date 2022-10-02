@@ -1,6 +1,6 @@
 decay_routes
-"187Pb,EC+B+,90.5%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,EC+B+,88.3%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,A,11.7%,691.27keV,9.4seconds,179Pt,EC+B+,99.76%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"187Pb,EC+B+,90.5%,0.0keV,15.2seconds,EC+B+ not yet accounted for"
+"187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,EC+B+,88.3%,0.0keV,9.4seconds,EC+B+ not yet accounted for"
+"187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,A,11.7%,691.27keV,9.4seconds,179Pt,EC+B+,99.76%,1244.85keV,21.2seconds,EC+B+ not yet accounted for"
 "187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,ECP,0.00026%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
-"187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,A,11.7%,691.27keV,9.4seconds,179Pt,A,0.24%,12.47keV,21.2seconds,175Os,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"187Pb,A,9.5%,427.91keV,15.2seconds,183Hg,A,11.7%,691.27keV,9.4seconds,179Pt,A,0.24%,12.47keV,21.2seconds,175Os,EC+B+,100%,0.0keV,84seconds,EC+B+ not yet accounted for"

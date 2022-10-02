@@ -1,7 +1,7 @@
 decay_routes
-"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,EC+B+,73%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,EC+B+, %,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,A,27%,1468.07keV,3.6seconds,177Pt,EC+B+,94.3%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,EC+B+,73%,0.0keV,3.6seconds,EC+B+ not yet accounted for"
+"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,EC+B+, %,0.0keV,6.3seconds,EC+B+ not yet accounted for"
+"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,A,27%,1468.07keV,3.6seconds,177Pt,EC+B+,94.3%,0.0keV,10seconds,EC+B+ not yet accounted for"
 "193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,ECP,0.013%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
-"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,A,27%,1468.07keV,3.6seconds,177Pt,A,5.7%,313.85keV,10seconds,173Os,EC+B+,99.6%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,A,27%,1468.07keV,3.6seconds,177Pt,A,5.7%,313.85keV,10seconds,173Os,A,0.4%,1.04keV,22.4seconds,169W,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,A,27%,1468.07keV,3.6seconds,177Pt,A,5.7%,313.85keV,10seconds,173Os,EC+B+,99.6%,0.0keV,22.4seconds,EC+B+ not yet accounted for"
+"193Rn,A,100%,7734.4keV,0.00115seconds,189Po,A,100%,7286.84keV,0.0035seconds,185Pb,A,34%,2183.13keV,6.3seconds,181Hg,A,27%,1468.07keV,3.6seconds,177Pt,A,5.7%,313.85keV,10seconds,173Os,A,0.4%,1.04keV,22.4seconds,169W,EC+B+,100%,0.0keV,74seconds,EC+B+ not yet accounted for"

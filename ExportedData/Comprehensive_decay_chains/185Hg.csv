@@ -1,4 +1,4 @@
 decay_routes
-"185Hg,EC+B+,94%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"185Hg,A,6%,338.98keV,49.1seconds,181Pt,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"185Hg,A,6%,338.98keV,49.1seconds,181Pt,A,0.08%,3.72keV,52seconds,177Os,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"185Hg,EC+B+,94%,0.0keV,49.1seconds,EC+B+ not yet accounted for"
+"185Hg,A,6%,338.98keV,49.1seconds,181Pt,EC+B+,100%,0.0keV,52seconds,EC+B+ not yet accounted for"
+"185Hg,A,6%,338.98keV,49.1seconds,181Pt,A,0.08%,3.72keV,52seconds,177Os,EC+B+,100%,0.0keV,180seconds,EC+B+ not yet accounted for"

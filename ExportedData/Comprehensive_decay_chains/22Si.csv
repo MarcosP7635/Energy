@@ -1,3 +1,5 @@
 decay_routes
-"22Si,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"22Si,EC+B+,100%,5982.7keV,0.029seconds,22Al,EC+B+,100%,4778.62keV,0.0911seconds,22Mg,EC+B+,100%,1369.12keV,3.8755seconds,22Na,EC+B+,100%,195.15keV,82104810.00069347seconds,22Ne,stable"
 "22Si,B+P,32%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"22Si,EC+B+,100%,5982.7keV,0.029seconds,22Al,B+P,55%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"22Si,EC+B+,100%,5982.7keV,0.029seconds,22Al,B+2P,1.1%,B+2P not yet accounted for,B+2P not accounted for ,B+2P not yet accounted for"

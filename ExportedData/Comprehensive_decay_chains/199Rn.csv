@@ -1,7 +1,7 @@
 decay_routes
-"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,EC+B+,99.987%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"199Rn,EC+B+,6%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"199Rn,A,94%,6569.66keV,0.59seconds,195Po,EC+B+,6%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,A,0.013%,0.688keV,79.8seconds,187Hg,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,A,0.013%,0.688keV,79.8seconds,187Hg,A,0.00037%,0.604keV,114seconds,183Pt,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,A,0.013%,0.688keV,79.8seconds,187Hg,A,0.00037%,0.604keV,114seconds,183Pt,A,0.0096%,0.453keV,390seconds,179Os,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,EC+B+,99.987%,0.0keV,79.8seconds,EC+B+ not yet accounted for"
+"199Rn,EC+B+,6%,0.0keV,0.59seconds,EC+B+ not yet accounted for"
+"199Rn,A,94%,6569.66keV,0.59seconds,195Po,EC+B+,6%,0.0keV,4.64seconds,EC+B+ not yet accounted for"
+"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,A,0.013%,0.688keV,79.8seconds,187Hg,EC+B+,100%,0.0keV,114seconds,EC+B+ not yet accounted for"
+"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,A,0.013%,0.688keV,79.8seconds,187Hg,A,0.00037%,0.604keV,114seconds,183Pt,EC+B+,100%,0.0keV,390seconds,EC+B+ not yet accounted for"
+"199Rn,A,94%,6569.66keV,0.59seconds,195Po,A,94%,7209.69keV,4.64seconds,191Pb,A,0.013%,0.688keV,79.8seconds,187Hg,A,0.00037%,0.604keV,114seconds,183Pt,A,0.0096%,0.453keV,390seconds,179Os,EC+B+,100%,0.0keV,390seconds,EC+B+ not yet accounted for"

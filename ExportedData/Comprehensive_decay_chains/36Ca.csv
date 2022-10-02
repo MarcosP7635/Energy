@@ -1,3 +1,5 @@
 decay_routes
-"36Ca,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"36Ca,EC+B+,100%,3322.53keV,0.1012seconds,36K,EC+B+,100%,3494.13keV,0.341seconds,36Ar,stable"
 "36Ca,ECP,51.2%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"36Ca,EC+B+,100%,3322.53keV,0.1012seconds,36K,ECP,0.048%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"36Ca,EC+B+,100%,3322.53keV,0.1012seconds,36K,ECA,0.0034%,ECA not yet accounted for,ECA not accounted for ,ECA not yet accounted for"

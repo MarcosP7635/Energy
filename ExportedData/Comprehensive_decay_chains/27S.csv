@@ -1,4 +1,5 @@
 decay_routes
-"27S,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"27S,EC+B+,100%,0.0keV,0.0155seconds,27P,EC+B+,100%,0.0keV,0.26seconds,27Si,EC+B+,100%,859.06keV,4.15seconds,27Al,stable"
 "27S,B+P,2.3%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
 "27S,B+2P,1.1%,B+2P not yet accounted for,B+2P not accounted for ,B+2P not yet accounted for"
+"27S,EC+B+,100%,0.0keV,0.0155seconds,27P,B+P,0.07%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"

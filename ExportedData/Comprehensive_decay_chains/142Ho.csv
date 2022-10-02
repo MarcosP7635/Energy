@@ -1,5 +1,8 @@
 decay_routes
-"142Ho,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"142Ho,P,0%,5267.72keV,P not accounted for ,141Dy,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"142Ho,EC+B+,100%,0.0keV,0.4seconds,142Dy,EC+B+,100%,0.0keV,2.3seconds,142Tb,EC+B+,100%,4102.89keV,0.597seconds,142Gd,EC+B+,100%,729.1keV,70.2seconds,142Eu,EC+B+,100%,2764.66keV,2.34seconds,142Sm,EC+B+,100%,38.55keV,4349.4seconds,142Pm,EC+B+,100%,1353.07keV,40.5seconds,142Nd,stable"
+"142Ho,P,0%,5267.72keV,P not accounted for ,141Dy,EC+B+,100%,0.0keV,0.9seconds,141Tb,EC+B+,100%,2843.29keV,3.5seconds,141Gd,EC+B+,100%,2139.8keV,14seconds,141Eu,EC+B+,100%,1909.03keV,40.7seconds,141Sm,EC+B+,100%,707.46keV,612seconds,141Pm,EC+B+,100%,593.24keV,1254seconds,141Nd,EC+B+,100%,9.51keV,8964seconds,141Pr,stable"
 "142Ho,ECP,0%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"142Ho,EC+B+,100%,0.0keV,0.4seconds,142Dy,ECP,0.06%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
 "142Ho,P,0%,5267.72keV,P not accounted for ,141Dy,B+P, %,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"142Ho,EC+B+,100%,0.0keV,0.4seconds,142Dy,EC+B+,100%,0.0keV,2.3seconds,142Tb,B+P,0.0022%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
+"142Ho,P,0%,5267.72keV,P not accounted for ,141Dy,EC+B+,100%,0.0keV,0.9seconds,141Tb,EC+B+,100%,2843.29keV,3.5seconds,141Gd,B+P,0.03%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"

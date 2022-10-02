@@ -1,5 +1,5 @@
 decay_routes
-"129Pm,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"129Pm,P, %,0.0keV,P not accounted for ,128Nd,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"129Pm,EC+B+,100%,0.0keV,2.4seconds,EC+B+ not yet accounted for"
+"129Pm,P, %,0.0keV,P not accounted for ,128Nd,EC+B+,100%,0.0keV,5seconds,EC+B+ not yet accounted for"
 "129Pm,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
 "129Pm,P, %,0.0keV,P not accounted for ,128Nd,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"

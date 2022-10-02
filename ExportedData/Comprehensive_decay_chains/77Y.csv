@@ -1,5 +1,7 @@
 decay_routes
-"77Y,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"77Y,P, %,0.0keV,P not accounted for ,76Sr,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"77Y,EC+B+,100%,0.0keV,0.057seconds,77Sr,EC+B+,100%,2658.39keV,9seconds,77Rb,EC+B+,100%,1670.3keV,226.8seconds,77Kr,EC+B+,100%,663.85keV,4275seconds,77Br,EC+B+,100%,1.11keV,205344seconds,77Se,stable"
+"77Y,P, %,0.0keV,P not accounted for ,76Sr,EC+B+,100%,1085.3keV,7.89seconds,76Rb,EC+B+,100%,2354.77keV,36.5seconds,76Kr,EC+B+,100%,0.0keV,53280seconds,76Br,EC+B+,100%,645.88keV,58320seconds,76Se,stable"
 "77Y,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"77Y,EC+B+,100%,0.0keV,0.057seconds,77Sr,ECP,0.08%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
 "77Y,P, %,0.0keV,P not accounted for ,76Sr,ECP,0.000034%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"77Y,P, %,0.0keV,P not accounted for ,76Sr,EC+B+,100%,1085.3keV,7.89seconds,76Rb,ECA,0.00000038%,ECA not yet accounted for,ECA not accounted for ,ECA not yet accounted for"

@@ -1,3 +1,4 @@
 decay_routes
-"80Zr,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"80Zr,EC+B+,100%,0.0keV,4.6seconds,80Y,EC+B+,100%,2104.5keV,30.1seconds,80Sr,EC+B+,100%,35.78keV,6378seconds,80Rb,EC+B+,100%,2038.0keV,33.4seconds,80Kr,stable"
 "80Zr,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
+"80Zr,EC+B+,100%,0.0keV,4.6seconds,80Y,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"

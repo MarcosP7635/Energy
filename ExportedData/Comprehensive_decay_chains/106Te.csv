@@ -1,2 +1,3 @@
 decay_routes
-"106Te,A,100%,nothingkeV,0.00007seconds,102Sn,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"106Te,A,100%,nothingkeV,0.00007seconds,102Sn,EC+B+,100%,1147.96keV,3.8seconds,102In,EC+B+,100%,0.0keV,23.3seconds,102Cd,EC+B+,100%,59.84keV,330seconds,102Ag,EC+B+,100%,0.0keV,774seconds,102Pd,stable"
+"106Te,A,100%,nothingkeV,0.00007seconds,102Sn,EC+B+,100%,1147.96keV,3.8seconds,102In,B+P,0.0093%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"

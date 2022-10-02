@@ -1,6 +1,6 @@
 decay_routes
-"162Ta,EC+B+,99.926%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"162Ta,A,0.074%,3.61keV,3.57seconds,158Lu,EC+B+,99.09%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"162Ta,EC+B+,99.926%,0.0keV,3.57seconds,EC+B+ not yet accounted for"
+"162Ta,A,0.074%,3.61keV,3.57seconds,158Lu,EC+B+,99.09%,0.0keV,10.6seconds,EC+B+ not yet accounted for"
 "162Ta,ECP, %,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
-"162Ta,A,0.074%,3.61keV,3.57seconds,158Lu,A,0.91%,42.49keV,10.6seconds,154Tm,A,54%,2675.92keV,8.1seconds,150Ho,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"162Ta,A,0.074%,3.61keV,3.57seconds,158Lu,A,0.91%,42.49keV,10.6seconds,154Tm,EC+B+,46%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"162Ta,A,0.074%,3.61keV,3.57seconds,158Lu,A,0.91%,42.49keV,10.6seconds,154Tm,A,54%,2675.92keV,8.1seconds,150Ho,EC+B+,100%,689.13keV,72seconds,EC+B+ not yet accounted for"
+"162Ta,A,0.074%,3.61keV,3.57seconds,158Lu,A,0.91%,42.49keV,10.6seconds,154Tm,EC+B+,46%,0.0keV,8.1seconds,EC+B+ not yet accounted for"

@@ -1,5 +1,5 @@
 decay_routes
-"207Ra,A,86%,3565.5keV,1.35seconds,203Rn,A,66%,4270.97keV,44.2seconds,199Po,EC+B+,92.5%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"207Ra,EC+B+,14%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"207Ra,A,86%,3565.5keV,1.35seconds,203Rn,EC+B+,34%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"207Ra,A,86%,3565.5keV,1.35seconds,203Rn,A,66%,4270.97keV,44.2seconds,199Po,A,7.5%,714.24keV,328.2seconds,195Pb,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"207Ra,A,86%,3565.5keV,1.35seconds,203Rn,A,66%,4270.97keV,44.2seconds,199Po,EC+B+,92.5%,0.0keV,328.2seconds,EC+B+ not yet accounted for"
+"207Ra,EC+B+,14%,0.0keV,1.35seconds,EC+B+ not yet accounted for"
+"207Ra,A,86%,3565.5keV,1.35seconds,203Rn,EC+B+,34%,0.0keV,44.2seconds,EC+B+ not yet accounted for"
+"207Ra,A,86%,3565.5keV,1.35seconds,203Rn,A,66%,4270.97keV,44.2seconds,199Po,A,7.5%,714.24keV,328.2seconds,195Pb,EC+B+,100%,0.0keV,900seconds,EC+B+ not yet accounted for"

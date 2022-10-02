@@ -1,4 +1,4 @@
 decay_routes
 "162Re,A,94%,5903.42keV,0.107seconds,158Ta,A,91%,0.0keV,0.055seconds,154Lu,stable"
-"162Re,EC+B+,6%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"162Re,A,94%,5903.42keV,0.107seconds,158Ta,EC+B+,9%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"162Re,EC+B+,6%,0.0keV,0.107seconds,EC+B+ not yet accounted for"
+"162Re,A,94%,5903.42keV,0.107seconds,158Ta,EC+B+,9%,0.0keV,0.055seconds,EC+B+ not yet accounted for"

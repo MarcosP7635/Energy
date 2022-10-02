@@ -1,8 +1,8 @@
 decay_routes
-"165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,A,94%,5387.14keV,0.115seconds,153Yb,EC+B+,90%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"165Os,EC+B+,10%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"165Os,A,90%,4946.4keV,0.071seconds,161W,EC+B+,27%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,EC+B+,14%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
-"165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,A,94%,5387.14keV,0.115seconds,153Yb,A,10%,0.0keV,4.2seconds,149Er,EC+B+,100%,EC+B+ not yet accounted for,EC+B+ not accounted for ,EC+B+ not yet accounted for"
+"165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,A,94%,5387.14keV,0.115seconds,153Yb,EC+B+,90%,1643.74keV,4.2seconds,EC+B+ not yet accounted for"
+"165Os,EC+B+,10%,0.0keV,0.071seconds,EC+B+ not yet accounted for"
+"165Os,A,90%,4946.4keV,0.071seconds,161W,EC+B+,27%,0.0keV,0.409seconds,EC+B+ not yet accounted for"
+"165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,EC+B+,14%,0.0keV,0.115seconds,EC+B+ not yet accounted for"
+"165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,A,94%,5387.14keV,0.115seconds,153Yb,A,10%,0.0keV,4.2seconds,149Er,EC+B+,100%,910.28keV,4seconds,EC+B+ not yet accounted for"
 "165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,A,94%,5387.14keV,0.115seconds,153Yb,B+P,0.008%,B+P not yet accounted for,B+P not accounted for ,B+P not yet accounted for"
 "165Os,A,90%,4946.4keV,0.071seconds,161W,A,73%,4215.75keV,0.409seconds,157Hf,A,94%,5387.14keV,0.115seconds,153Yb,A,10%,0.0keV,4.2seconds,149Er,ECP,7%,ECP not yet accounted for,ECP not accounted for ,ECP not yet accounted for"
