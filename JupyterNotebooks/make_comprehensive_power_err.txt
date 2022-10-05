@@ -1,0 +1,36 @@
+{
+	"name": "LoadError",
+	"message": "MethodError: no method matching occursin(::String, ::Vector{String})
+    \n\u001b[0mClosest candidates are:
+    \n\u001b[0m  occursin(::Union{AbstractChar, AbstractString}, 
+    \u001b[91m::AbstractString\u001b[39m) at 
+    C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\base\\strings\\
+    search.jl:622\n\u001b[0m  occursin(\u001b[91m::SymbolicUtils.Symbolic\u001b[39m, ::Any) 
+    at C:\\Users\\engin\\.julia\\packages\\SymbolicUtils\\qulQp\\src\\substitute.jl:52
+    \n\u001b[0m  occursin(::Any, \u001b[91m::SymPermutationGroup\u001b[39m; kwargs...)
+     at C:\\Users\\engin\\.julia\\packages\\SymPy\\5GXQf\\src\\permutations.jl:250
+     \n\u001b[0m  ...",
+	"stack": "MethodError: no method matching occursin(::String, ::Vector{String})
+    \n\u001b[0mClosest candidates are:\n\u001b[0m  occursin(::Union{AbstractChar,
+     AbstractString}, \u001b[91m::AbstractString\u001b[39m) at 
+     C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\
+     share\\julia\\base\\strings\\search.jl:622\n\u001b[0m 
+      occursin(\u001b[91m::SymbolicUtils.Symbolic\u001b[39m, ::Any) 
+      at C:\\Users\\engin\\.julia\\packages\\SymbolicUtils\\qulQp\\src
+      \\substitute.jl:52
+      \n\u001b[0m  occursin(::Any, 
+      \u001b[91m::SymPermutationGroup\u001b[39m; kwargs...) at
+       C:\\Users\\engin\\.julia\\packages\\SymPy\\5GXQf\\src\\permutations.jl:250\n\u001b[0m  
+       ...\n\nStacktrace:\n  [1] (::var\"#37#39\")(part::Vector{String})\n    @ Main .\\none:0
+       \n  [2] iterate\n    @ .\\generator.jl:47 [inlined]\n  [3] collect_to!
+       \n    @ .\\array.jl:782 [inlined]\n  [4] collect_to_with_first!(dest::Vector{Bool},
+        v1::Bool, itr::Base.Generator{Pair{String, Vector{String}}, var\"#37#39\"}, st::Int64)
+        \n    @ Base .\\array.jl:760\n  [5] collect(itr::Base.Generator{Pair{String, Vector{String}}, var\"#37#39\"})
+        \n    @ Base .\\array.jl:734\n  [6] is_last_step\n    @ .\\In[40]:1 [inlined]\n  [7] #62
+        \n    @ .\\none:0 [inlined]\n  [8] iterate\n    @ .\\generator.jl:47 [inlined]
+        \n  [9] collect(itr::Base.Generator{Dict{String, Vector{String}}, var\"#62#64\"})
+        \n    @ Base .\\array.jl:724\n [10] make_decay_chain(isotope::String)
+        \n    @ Main .\\In[42]:18\n [11] top-level scope\n    @ .\\In[42]:32\n [12] eval
+        \n    @ .\\boot.jl:373 [inlined]\n [13] include_string(mapexpr::typeof(REPL.softscope), mod::Module, code::String, filename::String)
+        \n    @ Base .\\loading.jl:1196"
+}
