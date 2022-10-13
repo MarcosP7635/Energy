@@ -1,36 +1,5 @@
 {
 	"name": "LoadError",
-	"message": "MethodError: no method matching occursin(::String, ::Vector{String})
-    \n\u001b[0mClosest candidates are:
-    \n\u001b[0m  occursin(::Union{AbstractChar, AbstractString}, 
-    \u001b[91m::AbstractString\u001b[39m) at 
-    C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\base\\strings\\
-    search.jl:622\n\u001b[0m  occursin(\u001b[91m::SymbolicUtils.Symbolic\u001b[39m, ::Any) 
-    at C:\\Users\\engin\\.julia\\packages\\SymbolicUtils\\qulQp\\src\\substitute.jl:52
-    \n\u001b[0m  occursin(::Any, \u001b[91m::SymPermutationGroup\u001b[39m; kwargs...)
-     at C:\\Users\\engin\\.julia\\packages\\SymPy\\5GXQf\\src\\permutations.jl:250
-     \n\u001b[0m  ...",
-	"stack": "MethodError: no method matching occursin(::String, ::Vector{String})
-    \n\u001b[0mClosest candidates are:\n\u001b[0m  occursin(::Union{AbstractChar,
-     AbstractString}, \u001b[91m::AbstractString\u001b[39m) at 
-     C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\
-     share\\julia\\base\\strings\\search.jl:622\n\u001b[0m 
-      occursin(\u001b[91m::SymbolicUtils.Symbolic\u001b[39m, ::Any) 
-      at C:\\Users\\engin\\.julia\\packages\\SymbolicUtils\\qulQp\\src
-      \\substitute.jl:52
-      \n\u001b[0m  occursin(::Any, 
-      \u001b[91m::SymPermutationGroup\u001b[39m; kwargs...) at
-       C:\\Users\\engin\\.julia\\packages\\SymPy\\5GXQf\\src\\permutations.jl:250\n\u001b[0m  
-       ...\n\nStacktrace:\n  [1] (::var\"#37#39\")(part::Vector{String})\n    @ Main .\\none:0
-       \n  [2] iterate\n    @ .\\generator.jl:47 [inlined]\n  [3] collect_to!
-       \n    @ .\\array.jl:782 [inlined]\n  [4] collect_to_with_first!(dest::Vector{Bool},
-        v1::Bool, itr::Base.Generator{Pair{String, Vector{String}}, var\"#37#39\"}, st::Int64)
-        \n    @ Base .\\array.jl:760\n  [5] collect(itr::Base.Generator{Pair{String, Vector{String}}, var\"#37#39\"})
-        \n    @ Base .\\array.jl:734\n  [6] is_last_step\n    @ .\\In[40]:1 [inlined]\n  [7] #62
-        \n    @ .\\none:0 [inlined]\n  [8] iterate\n    @ .\\generator.jl:47 [inlined]
-        \n  [9] collect(itr::Base.Generator{Dict{String, Vector{String}}, var\"#62#64\"})
-        \n    @ Base .\\array.jl:724\n [10] make_decay_chain(isotope::String)
-        \n    @ Main .\\In[42]:18\n [11] top-level scope\n    @ .\\In[42]:32\n [12] eval
-        \n    @ .\\boot.jl:373 [inlined]\n [13] include_string(mapexpr::typeof(REPL.softscope), mod::Module, code::String, filename::String)
-        \n    @ Base .\\loading.jl:1196"
+	"message": "MethodError: no method matching one(::Type{Any})\n\u001b[0mClosest candidates are:\n\u001b[0m  one(::Type{Union{Missing, T}}) where T at C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\base\\missing.jl:105\n\u001b[0m  one(\u001b[91m::Union{Type{T}, T}\u001b[39m) where T<:AbstractString at C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\base\\strings\\basic.jl:262\n\u001b[0m  one(\u001b[91m::Union{Type{P}, P}\u001b[39m) where P<:Dates.Period at C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\stdlib\\v1.7\\Dates\\src\\periods.jl:54\n\u001b[0m  ...",
+	"stack": "MethodError: no method matching one(::Type{Any})\n\u001b[0mClosest candidates are:\n\u001b[0m  one(::Type{Union{Missing, T}}) where T at C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\base\\missing.jl:105\n\u001b[0m  one(\u001b[91m::Union{Type{T}, T}\u001b[39m) where T<:AbstractString at C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\base\\strings\\basic.jl:262\n\u001b[0m  one(\u001b[91m::Union{Type{P}, P}\u001b[39m) where P<:Dates.Period at C:\\Users\\engin\\AppData\\Local\\Programs\\Julia-1.7.2\\share\\julia\\stdlib\\v1.7\\Dates\\src\\periods.jl:54\n\u001b[0m  ...\n\nStacktrace:\n  [1] one(#unused#::Type{Any})\n    @ Base .\\missing.jl:106\n  [2] reduce_empty(#unused#::typeof(*), #unused#::Type{Any})\n    @ Base .\\reduce.jl:316\n  [3] reduce_empty(#unused#::typeof(Base.mul_prod), #unused#::Type{Any})\n    @ Base .\\reduce.jl:326\n  [4] mapreduce_empty(#unused#::typeof(identity), op::Function, T::Type)\n    @ Base .\\reduce.jl:345\n  [5] reduce_empty(op::Base.MappingRF{typeof(identity), typeof(Base.mul_prod)}, #unused#::Type{Any})\n    @ Base .\\reduce.jl:331\n  [6] reduce_empty_iter\n    @ .\\reduce.jl:357 [inlined]\n  [7] mapreduce_empty_iter(f::Function, op::Function, itr::Vector{Any}, ItrEltype::Base.HasEltype)\n    @ Base .\\reduce.jl:353\n  [8] _mapreduce(f::typeof(identity), op::typeof(Base.mul_prod), #unused#::IndexLinear, A::Vector{Any})\n    @ Base .\\reduce.jl:402\n  [9] _mapreduce_dim\n    @ .\\reducedim.jl:330 [inlined]\n [10] #mapreduce#725\n    @ .\\reducedim.jl:322 [inlined]\n [11] mapreduce\n    @ .\\reducedim.jl:322 [inlined]\n [12] #_prod#739\n    @ .\\reducedim.jl:894 [inlined]\n [13] _prod\n    @ .\\reducedim.jl:894 [inlined]\n [14] #_prod#738\n    @ .\\reducedim.jl:893 [inlined]\n [15] _prod(a::Vector{Any}, ::Colon)\n    @ Base .\\reducedim.jl:893\n [16] #prod#736\n    @ .\\reducedim.jl:889 [inlined]\n [17] prod\n    @ .\\reducedim.jl:889 [inlined]\n [18] a_prod(e_folding_times::Vector{Any}, t::Num)\n    @ Main .\\In[35]:2\n [19] r(e_fold_times::Vector{Any}, t::Num)\n    @ Main .\\In[35]:4\n [20] power_per_mole(decay_probabilities::Vector{Any}, decay_energies::Vector{Any}, e_folding_times::Vector{Any}, t::Num)\n    @ Main .\\In[81]:10\n [21] helper(decay_energies::Vector{Any}, decay_probabilities::Vector{Any}, e_folding_times::Vector{Any}, t::Num, index::Int64)\n    @ Main .\\In[104]:1\n [22] process_nested_vectors(e_folding_times::Vector{Any}, decay_probabilities::Vector{Any}, decay_energies::Vector{Any}, t::Num, is_parent::Bool)\n    @ Main .\\In[104]:16\n [23] top-level scope\n    @ In[104]:25\n [24] eval\n    @ .\\boot.jl:373 [inlined]\n [25] include_string(mapexpr::typeof(REPL.softscope), mod::Module, code::String, filename::String)\n    @ Base .\\loading.jl:1196"
 }
