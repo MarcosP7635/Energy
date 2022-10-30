@@ -1,4 +1,4 @@
-,N,Z,A,Elt.,Orig.,Mass excess (keV),Mass excess (uncertainty),Binding energy per nucleon (keV),Binding energy per nucleon (uncertainty),Beta-decay Type,Beta-decay energy (keV),Beta-decay energy (uncertainty),Atomic mass (μu),Atomic mass (uncertainty)
+,N,Z,A,Elt.,Orig.,Mass excess (keV),Mass excess (uncertainty),Binding energy per nucleon (keV),Binding energy per nucleon (uncertainty),Beta-decay Type,Beta-decay energy (keV),Beta-decay energy (uncertainty),Atomic mass (u),Atomic mass (uncertainty)
 0,1,0.0,1.0,n,NA,8071.31806,0.00044,0.0,0.0,B-,782.347,0.0004,1.0086649159,0.00047
 1,0,1.0,1.0,H,NA,7288.971064,0.000013,0.0,0.0,B-,*,NA,1.007825031898,0.000014
 2,1,1.0,2.0,H,NA,13135.722895,0.000015,1112.2831,0.0002,B-,*,NA,2.014101777844,0.000015
