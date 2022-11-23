@@ -1,5 +1,3 @@
-Howdy. 
-
 This project mostly consists of Jupyter notebooks that contain Julia and/or Python code to simulate energy storage. Specifically, storing energy by producing radionuclides. 
 
 Interactive plots to view the results of the simulations
@@ -11,5 +9,4 @@ The same plots hosted on Githubpages and Firebase:
     https://marcosp7635.github.io/plots/ 
 
 
-Breakdown by file and directory: 
     
