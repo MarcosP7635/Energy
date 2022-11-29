@@ -8,5 +8,7 @@ The same plots hosted on Githubpages and Firebase:
     https://mp7635plots.web.app/ 
     https://marcosp7635.github.io/plots/ 
 
+The majority of the original code is in the folder named JupyterNotebooks. Each Jupyter notebook is stored as a .ipynb file and has its own internal documentation. 
+
 
     
