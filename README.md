@@ -4,8 +4,8 @@ The majority of the original code is in the folder named JupyterNotebooks. Each 
 
 # Interactive plots in the browser to view the results of the simulations 
  Streamlit app to view the power produced by over 2,400 different decay chains: 
-  https://marcosp7635-power-densities-plot-power-de1e9n.streamlitapp.com/ 
- 
+ https://marcosp7635-plot-power.streamlit.app/
+
  Additional plots hosted on Githubpages and Firebase: 
   https://mp7635plots.web.app/ 
   https://marcosp7635.github.io/plots/ 
