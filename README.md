@@ -1,5 +1,5 @@
 # Documentation
-This project mostly consists of Jupyter notebooks that contain Julia and/or Python code to simulate energy storage. Specifically, storing energy by producing radionuclides. 
+This project mostly consists of Jupyter notebooks that contain Julia and/or Python code to simulate energy storage and production with nuclear reactions and decay. Specifically, storing energy by producing radionuclides. 
 The majority of the original code is in the folder named JupyterNotebooks. Each Jupyter notebook is stored as a .ipynb file and has its own internal documentation. 
 
 # Interactive plots in the browser to view the results of the simulations 
